@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	>
+  
+  <div th:replace="~{standardLayouts/head :: head1}">
+  	AQUI DEBERIA SALIR EL head
+  </div>
+  
+  <body>
+
+    <section style="min-height: 100vh;" class="pb-5 pt-5 bg-dark text-light">
+      <div class="block pt-5 pb-5 text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+
+              <h4 class="mt-5 mb-5 text-white">
+                Join over 900,000 designers already using Bootstrap. Get
+                Bootstrap <strong>free</strong> forever!
+              </h4>
+              <form th:object="${login}" method="POST" th:action="@{/loginPost}" 
+              		class="form-inline d-flex justify-content-center h-25">
+                <input th:field="*{username}" class="form-control  form-control mb-3"
+                  placeholder="email address">
+                <input th:field="*{password}" class="form-control form-control mb-3 mx-1"
+                  type="password" placeholder="Create a Password">
+                <!-- a th:href="@{loginPost}">Prueba</a -->
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100 btn-round mb-3 btn-rised"
+                  th:text="'Get started > '">
+                  Get started 
+                </button>
+              </form>
+              <p class="text-muted m-3">
+                By clicking "get started – free Forever!" I agree to Bootstraps
+                <a href="#">Terms of service</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block-bordered text-center">
+        <div class="container-fluid">
+          <blockquote class="pull-quote text-light mt-3">
+            <p>
+              “Notice that simple inset border above. Is not it lovely.”
+            </p>
+            <cite>Mark Otto, Huge Nerd</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+  	<div th:replace="~{standardLayouts/script :: script1}">
+  	  AQUI DEBERIA SALIR EL script
+    </div>
+
+  </body>
+
+</html>

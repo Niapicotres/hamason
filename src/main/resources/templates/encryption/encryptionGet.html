@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+	>
+  
+  <div th:replace="~{standardLayouts/head :: head1}">
+  	AQUI DEBERIA SALIR EL head
+  </div>
+  
+  <body>
+		
+  	<nav th:replace="~{standardLayouts/navbar :: navbar1}">
+  		AQUI DEBERIA SALIR EL navbar
+  	</nav>
+  	
+    <section style="min-height: 100vh;" class="pb-5 pt-5 bg-dark text-light">
+      <div class="block pt-5 pb-5 text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-10">
+
+              <h4 class="mt-2 mb-2 text-white">
+                Ecriptación de un texto
+              </h4>
+              <p th:text="${encoderList}"></p>
+              
+              <form th:object="${encryption}" method="POST" th:action="@{/encryption/encryptionPost}" 
+              		class="form-inline d-flex justify-content-center h-50">
+                <input th:field="*{textToEncrypt}" class="form-control  form-control mb-3"
+                  placeholder="text To Encrypt">
+             
+              <select th:field="*{passwordEncoderString}" required class="form-control">
+                <option th:each="encoder : ${encoderList}"
+                		th:text = "${encoder}"
+                		th:value = "${encoder}"
+                		>
+                </option>
+            
+              </select>
+             
+             
+                <button
+                  type="submit"
+                  class="btn btn-primary w-100 btn-round mb-3 btn-rised"
+                  th:text="'Get started > '">
+                  Get encryption 
+                </button>
+              </form>
+              <p class="text-muted m-3">
+                By clicking "get started – free Forever!" I agree to Bootstraps
+                <a href="#">Terms of service</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block block-bordered text-center">
+        <div class="container-fluid">
+          <blockquote class="pull-quote text-light mt-3">
+            <p>
+              “Notice that simple inset border above. Is not it lovely.”
+            </p>
+            <cite>Mark Otto, Huge Nerd</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+  	<div th:replace="~{standardLayouts/cover :: cover1}">
+  		AQUI DEBERIA SALIR EL cover
+  	</div>
+
+  	<div th:replace="~{standardLayouts/footer :: footer1}">
+  		AQUI DEBERIA SALIR EL footer
+  	</div>
+  	
+  	<div th:replace="~{standardLayouts/script :: script1}">
+  		AQUI DEBERIA SALIR EL script
+  	</div>
+    
+
+  </body>
+
+</html>
