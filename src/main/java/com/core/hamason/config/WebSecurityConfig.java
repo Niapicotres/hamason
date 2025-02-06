@@ -53,6 +53,8 @@ public class WebSecurityConfig {
                 .authorizeHttpRequests((authorize) -> authorize
 			        	.requestMatchers("/", "/index", "/login*", "/h2/**").permitAll()
 			        	.requestMatchers("/img/**").permitAll()
+			        	.requestMatchers("/css/**").permitAll()
+			        	.requestMatchers("/js/**").permitAll()
 			        	.requestMatchers("/loginPost").authenticated()
                         .anyRequest().authenticated()) //antes de entrar al master tiene que estar autenticado
                 //.formLogin(Customizer.withDefaults());	
