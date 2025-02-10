@@ -21,6 +21,6 @@ public class FamilyCategory {
     @Column(nullable = false, unique = true)
     private String nombre;
 
-    @OneToMany(mappedBy = "FamilyCategory")
+    @OneToMany(mappedBy = "familyCategory")
     private List<Product> productos;
 }
