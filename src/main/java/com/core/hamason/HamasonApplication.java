@@ -9,10 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 import com.core.hamason.data.model.Role;
-import com.core.hamason.data.model.Status;
 import com.core.hamason.data.model.User;
 import com.core.hamason.data.repository.IRoleRepository;
-import com.core.hamason.data.repository.IStatusRepository;
+import com.core.hamason.data.repository.IFamilyCategoryRepository;
 import com.core.hamason.data.repository.IUserRepository;
 
 @SpringBootApplication
@@ -26,7 +25,7 @@ public class HamasonApplication {
 	CommandLineRunner runner(
 		IUserRepository userRepository,
 		IRoleRepository roleRepository,
-		IStatusRepository statusRepository
+		IFamilyCategoryRepository statusRepository
 
 			) 
 	{ return args -> {
@@ -48,10 +47,10 @@ public class HamasonApplication {
 				true, false, Set.of(roleRepository.findById("ADMIN").get()
 						)));
 	
-		statusRepository.save(new Status(null, "INICIADO"));
-		statusRepository.save(new Status(null, "RECHAZADO"));
-		statusRepository.save(new Status(null, "ENVIADO"));
-		statusRepository.save(new Status(null, "ACEPTADO"));
+//		statusRepository.save(new Status(null, "INICIADO"));
+//		statusRepository.save(new Status(null, "RECHAZADO"));
+//		statusRepository.save(new Status(null, "ENVIADO"));
+//		statusRepository.save(new Status(null, "ACEPTADO"));
 		};
 	}
 
