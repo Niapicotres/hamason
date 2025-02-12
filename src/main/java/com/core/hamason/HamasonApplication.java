@@ -37,6 +37,9 @@ public class HamasonApplication {
 		roleRepository.save(new Role("ADMIN"));
 		roleRepository.save(new Role("USER"));
 		roleRepository.save(new Role("MANAGER"));
+		
+		roleRepository.save(new Role("EMPLOYEE"));
+		roleRepository.save(new Role("CUSTOMER"));
 
 		userRepository.save(new User("ana", "ana@gmail.com", "$2a$12$LLE1DtYpn9la045NGdITZebqhtqMDtexqlLct0SE0cHuE9MtqN7Yu" /*anaPass*/, "Ana Perez", 
 				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
@@ -51,6 +54,17 @@ public class HamasonApplication {
 				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
 				true, false, Set.of(roleRepository.findById("ADMIN").get()
 						)));
+		
+		
+		userRepository.save(new User("niaCustomer", "nia@gmail.com", "$2a$12$tSThCftgzCyejVRUjvqJa.5ibrmZRgXvmjElfx5idN2tjgeTN04pC" /*"niaPass"*/, "Nia Rozo", 
+				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
+				true, false, Set.of(roleRepository.findById("CUSTOMER").get()
+						)));	
+		userRepository.save(new User("niaEmployee", "nia@gmail.com", "$2a$12$tSThCftgzCyejVRUjvqJa.5ibrmZRgXvmjElfx5idN2tjgeTN04pC" /*"niaPass"*/, "Nia Rozo", 
+				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
+				true, false, Set.of(roleRepository.findById("EMPLOYEE").get()
+						)));
+	
 	
 		
 		    
