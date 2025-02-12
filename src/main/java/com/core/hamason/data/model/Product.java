@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 @Entity
 @Table(name = "product")
@@ -39,4 +40,14 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "family_category_id", nullable = false)
     private FamilyCategory familyCategory; // Relación con la tabla de familias
+    
+    public BigDecimal getPrecioFinal() {
+        if (discount == null || discount.compareTo(BigDecimal.ZERO) == 0) {
+            return price.setScale(2, RoundingMode.HALF_UP); // Redondea a 2 decimales
+        }
+        return price.multiply(BigDecimal.ONE.subtract(discount.divide(BigDecimal.valueOf(100))))
+                   .setScale(2, RoundingMode.HALF_UP); // Redondea a 2 decimales
+    }
+
+
 }

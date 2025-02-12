@@ -26,7 +26,7 @@ public class ProductControllerImpl implements IProductController {
     private IProductService productService;
     
     @Override
-    @GetMapping("/productListGet")
+    @GetMapping("/")
     public String productListGet(Principal principal, Model model, HttpServletRequest request) {
         log.info("Cargando la lista de productos");
         model.addAttribute("productList", productService.getAllProducts());
