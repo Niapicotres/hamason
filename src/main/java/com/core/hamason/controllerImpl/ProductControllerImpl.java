@@ -24,13 +24,13 @@ public class ProductControllerImpl implements IProductController {
 
     @Autowired
     private IProductService productService;
-
+    
     @Override
     @GetMapping("/productListGet")
     public String productListGet(Principal principal, Model model, HttpServletRequest request) {
         log.info("Cargando la lista de productos");
         model.addAttribute("productList", productService.getAllProducts());
-        return "product/productList";
+        return "index";
     }
 
     @Override

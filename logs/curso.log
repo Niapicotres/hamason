@@ -1,24 +1,24 @@
-10-02-2025 12:55:07 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 12252 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
-10-02-2025 12:55:07 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
-10-02-2025 12:55:07 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-10-02-2025 12:55:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-10-02-2025 12:55:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10-02-2025 12:55:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
-10-02-2025 12:55:08 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-10-02-2025 12:55:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-10-02-2025 12:55:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-10-02-2025 12:55:08 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
-10-02-2025 12:55:08 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1778 ms
-10-02-2025 12:55:09 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-10-02-2025 12:55:09 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
-10-02-2025 12:55:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-10-02-2025 12:55:09 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
-10-02-2025 12:55:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-10-02-2025 12:55:09 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-10-02-2025 12:55:09 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
-10-02-2025 12:55:09 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-10-02-2025 12:55:09 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-10-02-2025 12:55:09 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+12-02-2025 09:43:28 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 968 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 09:43:28 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 09:43:28 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12-02-2025 09:43:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 09:43:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 09:43:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+12-02-2025 09:43:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 09:43:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 09:43:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 09:43:31 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 09:43:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2116 ms
+12-02-2025 09:43:31 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 09:43:31 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 09:43:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12-02-2025 09:43:31 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 09:43:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12-02-2025 09:43:31 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 09:43:31 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+12-02-2025 09:43:31 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 09:43:31 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 09:43:32 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -26,77 +26,71 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-10-02-2025 12:55:10 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-10-02-2025 12:55:10 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-10-02-2025 12:55:10 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+12-02-2025 09:43:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 09:43:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 09:43:33 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 09:43:33 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 09:43:33 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 09:43:34 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 09:43:34 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 09:43:34 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@ad1310b, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@582f0412, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5d176596, started on Wed Feb 12 09:43:28 CET 2025}
+12-02-2025 09:43:34 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 09:43:34 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 09:43:34 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 09:43:34 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 09:43:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 09:43:35 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 6.579 seconds (process running for 7.54)
+12-02-2025 09:43:54 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12-02-2025 09:43:54 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12-02-2025 09:43:54 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+12-02-2025 09:43:54 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+12-02-2025 09:43:54 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+12-02-2025 09:43:54 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@483edf44
+12-02-2025 09:43:54 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7906e517
+12-02-2025 09:43:54 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12-02-2025 09:43:54 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+12-02-2025 09:43:54 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
+12-02-2025 09:43:54 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+12-02-2025 09:43:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:43:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
+12-02-2025 09:43:55 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 09:43:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
+12-02-2025 09:43:55 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 09:43:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:43:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:43:55 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
+12-02-2025 09:43:55 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
+12-02-2025 09:43:55 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+12-02-2025 09:43:55 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:49:33 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+12-02-2025 09:49:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 09:49:33 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 09:49:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 09:49:33 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-10-02-2025 12:55:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-10-02-2025 12:55:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-10-02-2025 12:55:10 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-10-02-2025 12:55:10 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-10-02-2025 12:55:10 ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.core.hamason.HamasonApplication.main(HamasonApplication.java:21)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.hibernate.AnnotationException: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1638)
-	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1652)
-	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1613)
-	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1604)
-	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1842)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1800)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	... 18 common frames omitted
-10-02-2025 13:20:42 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 6792 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
-10-02-2025 13:20:42 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
-10-02-2025 13:20:42 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-10-02-2025 13:20:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-10-02-2025 13:20:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10-02-2025 13:20:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
-10-02-2025 13:20:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-10-02-2025 13:20:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-10-02-2025 13:20:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-10-02-2025 13:20:43 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
-10-02-2025 13:20:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1471 ms
-10-02-2025 13:20:44 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-10-02-2025 13:20:44 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
-10-02-2025 13:20:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-10-02-2025 13:20:44 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
-10-02-2025 13:20:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-10-02-2025 13:20:44 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-10-02-2025 13:20:44 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
-10-02-2025 13:20:44 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-10-02-2025 13:20:44 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-10-02-2025 13:20:44 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+12-02-2025 09:49:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12-02-2025 09:49:33 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12-02-2025 09:50:08 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 13484 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 09:50:08 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 09:50:08 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12-02-2025 09:50:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 09:50:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 09:50:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+12-02-2025 09:50:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 09:50:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 09:50:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 09:50:10 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 09:50:10 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1511 ms
+12-02-2025 09:50:10 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 09:50:10 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 09:50:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12-02-2025 09:50:10 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 09:50:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12-02-2025 09:50:10 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 09:50:10 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+12-02-2025 09:50:10 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 09:50:10 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 09:50:10 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -104,230 +98,133 @@ Caused by: org.hibernate.AnnotationException: Collection 'com.core.hamason.data.
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-10-02-2025 13:20:45 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-10-02-2025 13:20:45 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-10-02-2025 13:20:45 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+12-02-2025 09:50:11 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 09:50:11 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 09:50:12 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 09:50:12 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 09:50:12 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 09:50:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 09:50:12 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 09:50:12 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@3690afca, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4eb5e728, started on Wed Feb 12 09:50:08 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@5e2d4b1c}
+12-02-2025 09:50:12 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 09:50:13 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 09:50:13 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 09:50:13 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 09:50:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 09:50:13 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 5.393 seconds (process running for 6.163)
+12-02-2025 09:50:18 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12-02-2025 09:50:18 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7dafd05e
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@36ceed12
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12-02-2025 09:50:18 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
+12-02-2025 09:50:18 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
+12-02-2025 09:50:18 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 09:50:18 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:50:18 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
+12-02-2025 09:50:18 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
+12-02-2025 09:50:18 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+12-02-2025 09:50:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:50:32 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
+12-02-2025 09:50:32 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+12-02-2025 09:50:32 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:50:33 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
+12-02-2025 09:50:33 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
+12-02-2025 09:50:33 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 09:50:33 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 09:50:33 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:50:33 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 09:50:33 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
+12-02-2025 09:50:33 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
+12-02-2025 09:50:33 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+12-02-2025 09:50:33 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 10:13:19 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12-02-2025 10:13:19 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:13:19 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:13:19 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:13:19 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-10-02-2025 13:20:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-10-02-2025 13:20:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-10-02-2025 13:20:45 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-10-02-2025 13:20:45 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-10-02-2025 13:20:45 ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.core.hamason.HamasonApplication.main(HamasonApplication.java:21)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.hibernate.AnnotationException: Collection 'com.core.hamason.data.model.FamilyCategory.productos' is 'mappedBy' a property named 'FamilyCategory' which does not exist in the target entity 'com.core.hamason.data.model.Product'
-	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1638)
-	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1652)
-	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1613)
-	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1604)
-	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1842)
-	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1800)
-	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
-	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
-	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
-	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
-	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	... 18 common frames omitted
-10-02-2025 13:25:57 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 16164 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
-10-02-2025 13:25:57 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
-10-02-2025 13:25:57 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-10-02-2025 13:25:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-10-02-2025 13:25:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10-02-2025 13:25:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
-10-02-2025 13:25:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-10-02-2025 13:25:58 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-10-02-2025 13:25:58 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-10-02-2025 13:25:58 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
-10-02-2025 13:25:58 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1422 ms
-10-02-2025 13:25:58 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-10-02-2025 13:25:58 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
-10-02-2025 13:25:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-10-02-2025 13:25:58 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
-10-02-2025 13:25:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-10-02-2025 13:25:58 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-10-02-2025 13:25:59 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
-10-02-2025 13:25:59 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-10-02-2025 13:25:59 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-10-02-2025 13:25:59 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+12-02-2025 10:13:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12-02-2025 10:13:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12-02-2025 10:13:19 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 13484 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:13:19 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:13:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:13:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:13:19 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:13:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:13:19 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:13:19 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:13:19 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:13:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 424 ms
+12-02-2025 10:13:20 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:13:20 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:13:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+12-02-2025 10:13:20 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:13:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+12-02-2025 10:13:20 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:13:20 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:13:20 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:13:20 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
 	Autocommit mode: undefined/unknown
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-10-02-2025 13:26:00 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-10-02-2025 13:26:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-10-02-2025 13:26:00 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productControllerImpl': Unsatisfied dependency expressed through field 'productService': Error creating bean with name 'productServiceImpl' defined in file [C:\Users\manana\eclipse-workspace\hamason\target\classes\com\core\hamason\serviceImpl\ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'IProductRepository' defined in com.core.hamason.data.repository.IProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); No property 'familia' found for type 'Product'
-10-02-2025 13:26:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-10-02-2025 13:26:00 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+12-02-2025 10:13:20 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:13:20 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:13:20 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:13:20 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:13:20 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:13:20 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:13:20 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:13:20 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@6a3e83a6, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@53fe1e8, started on Wed Feb 12 10:13:19 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@84df79a}
+12-02-2025 10:13:20 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:13:20 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:13:20 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:13:20 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:13:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:13:20 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 1.348 seconds (process running for 1393.578)
+12-02-2025 10:13:20 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12-02-2025 10:13:22 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+12-02-2025 10:13:22 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:13:22 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:13:22 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:13:22 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-10-02-2025 13:26:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-10-02-2025 13:26:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-10-02-2025 13:26:00 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-10-02-2025 13:26:00 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-10-02-2025 13:26:00 ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productControllerImpl': Unsatisfied dependency expressed through field 'productService': Error creating bean with name 'productServiceImpl' defined in file [C:\Users\manana\eclipse-workspace\hamason\target\classes\com\core\hamason\serviceImpl\ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'IProductRepository' defined in com.core.hamason.data.repository.IProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); No property 'familia' found for type 'Product'
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
-	at com.core.hamason.HamasonApplication.main(HamasonApplication.java:21)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'productServiceImpl' defined in file [C:\Users\manana\eclipse-workspace\hamason\target\classes\com\core\hamason\serviceImpl\ProductServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'IProductRepository' defined in com.core.hamason.data.repository.IProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); No property 'familia' found for type 'Product'
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804)
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785)
-	... 25 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'IProductRepository' defined in com.core.hamason.data.repository.IProductRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); No property 'familia' found for type 'Product'
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519)
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913)
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
-	... 38 common frames omitted
-Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); Reason: Failed to create query for method public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); No property 'familia' found for type 'Product'
-	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92)
-	at java.base/java.util.Optional.map(Optional.java:260)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92)
-	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:440)
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:350)
-	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135)
-	at org.springframework.data.util.Lazy.get(Lazy.java:113)
-	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:356)
-	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
-	... 49 common frames omitted
-Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.core.hamason.data.repository.IProductRepository.findByFamilia(java.lang.String); No property 'familia' found for type 'Product'
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:262)
-	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:99)
-	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:116)
-	... 61 common frames omitted
-Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'familia' found for type 'Product'
-	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455)
-	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431)
-	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384)
-	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366)
-	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344)
-	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260)
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390)
-	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:103)
-	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101)
-	... 65 common frames omitted
-10-02-2025 13:49:58 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 4692 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
-10-02-2025 13:49:58 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
-10-02-2025 13:49:58 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-10-02-2025 13:49:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-10-02-2025 13:49:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-10-02-2025 13:49:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
-10-02-2025 13:49:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-10-02-2025 13:49:59 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-10-02-2025 13:49:59 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-10-02-2025 13:49:59 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
-10-02-2025 13:49:59 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1450 ms
-10-02-2025 13:49:59 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-10-02-2025 13:49:59 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
-10-02-2025 13:50:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-10-02-2025 13:50:00 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
-10-02-2025 13:50:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-10-02-2025 13:50:00 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-10-02-2025 13:50:00 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
-10-02-2025 13:50:00 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-10-02-2025 13:50:00 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-10-02-2025 13:50:00 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+12-02-2025 10:13:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+12-02-2025 10:13:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+12-02-2025 10:20:11 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 16220 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:20:11 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:20:11 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12-02-2025 10:20:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:20:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:20:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:20:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:20:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:20:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:20:13 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:20:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
+12-02-2025 10:20:13 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:20:13 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:20:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12-02-2025 10:20:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:20:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12-02-2025 10:20:13 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:20:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+12-02-2025 10:20:13 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:20:13 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:20:14 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -335,17 +232,419 @@ Caused by: org.springframework.data.mapping.PropertyReferenceException: No prope
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-10-02-2025 13:50:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-10-02-2025 13:50:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-10-02-2025 13:50:02 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
-10-02-2025 13:50:02 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-10-02-2025 13:50:02 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
-10-02-2025 13:50:02 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
-10-02-2025 13:50:02 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-10-02-2025 13:50:02 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@4010e001, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@2932a1ad, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7cc79a50, started on Mon Feb 10 13:49:58 CET 2025}
-10-02-2025 13:50:02 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-10-02-2025 13:50:02 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-10-02-2025 13:50:02 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
-10-02-2025 13:50:03 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-10-02-2025 13:50:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
-10-02-2025 13:50:03 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 5.221 seconds (process running for 5.95)
+12-02-2025 10:20:14 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:20:14 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:20:15 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:20:15 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:20:15 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:20:15 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:20:15 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:20:15 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2c507d, started on Wed Feb 12 10:20:11 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@c6ca120, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@6c39e74a}
+12-02-2025 10:20:15 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:20:16 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:20:16 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:20:16 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:20:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:20:16 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 5.013 seconds (process running for 5.747)
+12-02-2025 10:23:28 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12-02-2025 10:23:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12-02-2025 10:23:28 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+12-02-2025 10:23:28 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+12-02-2025 10:23:28 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+12-02-2025 10:23:28 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1048e39a
+12-02-2025 10:23:28 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@34e5a6c2
+12-02-2025 10:23:28 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12-02-2025 10:23:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+12-02-2025 10:23:28 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
+12-02-2025 10:23:28 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
+12-02-2025 10:23:28 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+12-02-2025 10:23:29 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 10:24:32 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+12-02-2025 10:24:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:24:32 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:24:32 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:24:32 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+12-02-2025 10:24:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12-02-2025 10:24:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12-02-2025 10:24:34 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 11424 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:24:34 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:24:34 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12-02-2025 10:24:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:24:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:24:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:24:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:24:35 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:24:35 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:24:35 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:24:35 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1434 ms
+12-02-2025 10:24:35 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:24:35 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:24:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12-02-2025 10:24:35 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:24:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12-02-2025 10:24:36 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:24:36 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+12-02-2025 10:24:36 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:24:36 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:24:36 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12-02-2025 10:24:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:24:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:24:37 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:24:37 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:24:38 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:24:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:24:38 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:24:38 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@f2c507d, started on Wed Feb 12 10:24:34 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@268bb073, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@2d305e4}
+12-02-2025 10:24:38 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:24:38 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:24:38 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:24:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:24:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:24:38 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 5.101 seconds (process running for 5.82)
+12-02-2025 10:25:51 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+12-02-2025 10:25:51 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:25:51 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:25:51 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:25:51 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+12-02-2025 10:25:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12-02-2025 10:25:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12-02-2025 10:26:11 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 2540 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:26:11 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:26:12 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12-02-2025 10:26:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:26:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:26:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:26:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:26:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:26:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:26:13 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:26:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1438 ms
+12-02-2025 10:26:13 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:26:13 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:26:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12-02-2025 10:26:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:26:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12-02-2025 10:26:13 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:26:13 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+12-02-2025 10:26:14 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:26:14 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:26:14 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12-02-2025 10:26:15 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:26:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:26:15 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:26:15 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:26:15 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:26:15 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:26:16 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:26:16 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@29acd6a5, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5af02883, started on Wed Feb 12 10:26:12 CET 2025, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@17cc0aea}
+12-02-2025 10:26:16 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:26:16 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:26:16 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:26:16 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:26:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:26:16 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 5.097 seconds (process running for 5.883)
+12-02-2025 10:26:24 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12-02-2025 10:26:24 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2204bd0e
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@5e3a6c87
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12-02-2025 10:26:24 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
+12-02-2025 10:26:24 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
+12-02-2025 10:26:24 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
+12-02-2025 10:26:24 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 10:26:24 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 10:34:27 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12-02-2025 10:34:27 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:34:27 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:34:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:34:27 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+12-02-2025 10:34:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12-02-2025 10:34:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12-02-2025 10:38:10 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 2540 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:38:10 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:38:12 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 10024 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:38:12 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:38:12 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12-02-2025 10:38:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:38:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:38:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:38:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:38:13 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:38:13 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:38:13 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:38:13 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1421 ms
+12-02-2025 10:38:13 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:38:13 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:38:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12-02-2025 10:38:13 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:38:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12-02-2025 10:38:14 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:38:14 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+12-02-2025 10:38:14 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:38:14 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:38:14 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12-02-2025 10:38:15 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:38:15 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:38:15 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:38:15 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:38:15 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:38:16 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:38:16 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:38:16 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@6c026cb, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6366739a, started on Wed Feb 12 10:38:12 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@99bbc7e}
+12-02-2025 10:38:16 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:38:16 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:38:16 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:38:16 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:38:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:38:16 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 5.104 seconds (process running for 5.854)
+12-02-2025 10:38:57 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12-02-2025 10:38:57 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:38:57 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:38:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:38:57 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+12-02-2025 10:38:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12-02-2025 10:38:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12-02-2025 10:38:57 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 10024 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:38:57 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:38:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:38:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:38:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:38:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:38:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:38:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:38:57 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:38:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 393 ms
+12-02-2025 10:38:57 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:38:57 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:38:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+12-02-2025 10:38:57 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:38:57 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+12-02-2025 10:38:57 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:38:57 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:38:57 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:38:57 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12-02-2025 10:38:57 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:38:57 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:38:58 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:38:58 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:38:58 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:38:58 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:38:58 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:38:58 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@6fa20f1d, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2c1b9ed9, started on Wed Feb 12 10:38:57 CET 2025, interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@66fdd7c0}
+12-02-2025 10:38:58 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:38:58 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:38:58 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:38:58 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:38:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:38:58 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 1.398 seconds (process running for 47.654)
+12-02-2025 10:38:58 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12-02-2025 10:39:25 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12-02-2025 10:39:25 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:39:25 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:39:25 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:39:25 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+12-02-2025 10:39:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+12-02-2025 10:39:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+12-02-2025 10:52:13 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 15980 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:52:13 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:52:13 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+12-02-2025 10:52:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:52:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:52:14 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:52:14 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:52:14 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:52:14 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:52:14 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:52:14 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1425 ms
+12-02-2025 10:52:14 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:52:14 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:52:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+12-02-2025 10:52:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:52:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+12-02-2025 10:52:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:52:15 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+12-02-2025 10:52:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:52:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:52:15 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12-02-2025 10:52:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:52:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:52:17 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:52:17 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:52:17 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:52:17 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:52:17 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:52:17 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@3dcec040, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6366739a, started on Wed Feb 12 10:52:13 CET 2025, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@380ff6c2}
+12-02-2025 10:52:17 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:52:17 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:52:17 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:52:18 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:52:18 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:52:18 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 5.064 seconds (process running for 5.8)
+12-02-2025 10:55:00 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12-02-2025 10:55:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 10:55:00 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 10:55:00 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:55:00 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+12-02-2025 10:55:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+12-02-2025 10:55:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+12-02-2025 10:55:00 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 15980 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 10:55:00 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 10:55:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 10:55:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 10:55:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 4 JPA repository interfaces.
+12-02-2025 10:55:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 10:55:01 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 10:55:01 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 10:55:01 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 10:55:01 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 629 ms
+12-02-2025 10:55:01 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 10:55:01 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 10:55:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+12-02-2025 10:55:01 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 10:55:01 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+12-02-2025 10:55:01 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 10:55:01 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 10:55:01 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 10:55:01 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12-02-2025 10:55:01 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 10:55:01 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 10:55:01 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 10:55:01 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 10:55:01 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 10:55:01 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 10:55:01 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 10:55:02 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@5bceb181, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4a76df34, started on Wed Feb 12 10:55:00 CET 2025, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@5ae019be}
+12-02-2025 10:55:02 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 10:55:02 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 10:55:02 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 10:55:02 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 10:55:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 10:55:02 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 1.927 seconds (process running for 170.046)
+12-02-2025 10:55:02 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+12-02-2025 11:09:23 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12-02-2025 11:09:23 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@344598d0
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@46a8eee9
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+12-02-2025 11:09:23 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
+12-02-2025 11:09:23 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
+12-02-2025 11:09:23 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 11:09:23 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
+12-02-2025 11:09:23 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
+12-02-2025 11:09:23 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+12-02-2025 11:09:23 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+12-02-2025 11:21:26 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+12-02-2025 11:21:26 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+12-02-2025 11:21:26 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+12-02-2025 11:21:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 11:21:26 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+12-02-2025 11:21:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+12-02-2025 11:21:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+12-02-2025 11:21:26 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 15980 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
+12-02-2025 11:21:26 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+12-02-2025 11:21:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+12-02-2025 11:21:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+12-02-2025 11:21:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 4 JPA repository interfaces.
+12-02-2025 11:21:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+12-02-2025 11:21:27 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+12-02-2025 11:21:27 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+12-02-2025 11:21:27 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+12-02-2025 11:21:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 439 ms
+12-02-2025 11:21:27 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+12-02-2025 11:21:27 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+12-02-2025 11:21:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+12-02-2025 11:21:27 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn21: url=jdbc:h2:mem:hamason user=SAS
+12-02-2025 11:21:27 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+12-02-2025 11:21:27 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+12-02-2025 11:21:27 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+12-02-2025 11:21:27 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+12-02-2025 11:21:27 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+12-02-2025 11:21:27 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+12-02-2025 11:21:27 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+12-02-2025 11:21:27 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
+12-02-2025 11:21:27 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+12-02-2025 11:21:27 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+12-02-2025 11:21:27 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 25 mappings in 'requestMappingHandlerMapping'
+12-02-2025 11:21:27 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+12-02-2025 11:21:27 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@f9f6681, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@65ccafa, started on Wed Feb 12 11:21:26 CET 2025, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@f2f22c8}
+12-02-2025 11:21:27 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+12-02-2025 11:21:27 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+12-02-2025 11:21:27 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
+12-02-2025 11:21:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+12-02-2025 11:21:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
+12-02-2025 11:21:27 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 1.395 seconds (process running for 1755.712)
+12-02-2025 11:21:28 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

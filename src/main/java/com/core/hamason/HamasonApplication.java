@@ -1,6 +1,7 @@
 package com.core.hamason;
 
 import java.time.LocalDate;
+
 import java.util.Set;
 
 import org.springframework.boot.CommandLineRunner;
@@ -8,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import com.core.hamason.data.model.FamilyCategory;
 import com.core.hamason.data.model.Role;
 import com.core.hamason.data.model.User;
 import com.core.hamason.data.repository.IRoleRepository;
@@ -25,7 +27,7 @@ public class HamasonApplication {
 	CommandLineRunner runner(
 		IUserRepository userRepository,
 		IRoleRepository roleRepository,
-		IFamilyCategoryRepository statusRepository
+		IFamilyCategoryRepository familyCategoryRepository 
 
 			) 
 	{ return args -> {
@@ -47,10 +49,14 @@ public class HamasonApplication {
 				true, false, Set.of(roleRepository.findById("ADMIN").get()
 						)));
 	
-//		statusRepository.save(new Status(null, "INICIADO"));
-//		statusRepository.save(new Status(null, "RECHAZADO"));
-//		statusRepository.save(new Status(null, "ENVIADO"));
-//		statusRepository.save(new Status(null, "ACEPTADO"));
+		//DATA COLUMNS
+		    familyCategoryRepository.save(new FamilyCategory(null, "FOOD", null));
+		    familyCategoryRepository.save(new FamilyCategory(null, "ELECTRONICS", null));
+		    familyCategoryRepository.save(new FamilyCategory(null, "TEXTILE", null));
+		    familyCategoryRepository.save(new FamilyCategory(null, "JEWELRY", null));
+		    familyCategoryRepository.save(new FamilyCategory(null, "PERFUMERY", null));
+		
+		
 		};
 	}
 

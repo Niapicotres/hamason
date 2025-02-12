@@ -37,6 +37,6 @@ public class Product {
     private BigDecimal discount; // porcentaje entre 0.0 y 100.0
 
     @ManyToOne
-    @JoinColumn(name = "family_id", nullable = false)
+    @JoinColumn(name = "family_category_id", nullable = false)
     private FamilyCategory familyCategory; // Relación con la tabla de familias
 }
