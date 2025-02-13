@@ -1,66 +1,97 @@
 package com.core.hamason.controllerImpl;
 
+import java.security.Principal;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+
 import com.core.hamason.controller.IOrderController;
 import com.core.hamason.data.model.Order;
 import com.core.hamason.service.IOrderService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 
-import java.util.Set;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.validation.Valid;
+import lombok.extern.slf4j.Slf4j;
 
-@RestController
-@RequestMapping("/orders")
+@Slf4j
+@Controller
 public class OrderControllerImpl implements IOrderController {
 
     @Autowired
     private IOrderService orderService;
 
     @Override
-    @PostMapping
-    public ResponseEntity<Order> createOrder(@RequestBody Order order) {
-        Order savedOrder = orderService.save(order);
-        return ResponseEntity.ok(savedOrder);
+    @GetMapping("/orders")
+    public String orderListGet(Principal principal, Model model, HttpServletRequest request) {
+        log.info("Cargando la lista de pedidos");
+        model.addAttribute("orderList", orderService.getAllOrders());
+        return "order/orderList";
     }
 
     @Override
-    @GetMapping("/{id}")
-    public ResponseEntity<Order> getOrderById(@PathVariable Long id) {
-        return orderService.findById(id)
-                .map(order -> ResponseEntity.ok(order))
-                .orElse(ResponseEntity.notFound().build());
+    @GetMapping("/order/viewGet/{id}")
+    public String orderViewGet(@PathVariable("id") Long id, Principal principal, Model model, HttpServletRequest request) {
+        log.info("Visualizando pedido con ID: " + id);
+        model.addAttribute("order", orderService.getOrderById(id).orElse(null));
+        return "order/orderView";
     }
 
     @Override
-    @GetMapping
-    public ResponseEntity<Set<Order>> getAllOrders() {
-        Set<Order> orders = orderService.findAll();
-        return ResponseEntity.ok(orders);
+    @GetMapping("/order/updateGet/{id}")
+    public String orderUpdateGet(@PathVariable("id") Long id, Principal principal, Model model, HttpServletRequest request) {
+        log.info("Actualizando pedido con ID: " + id);
+        model.addAttribute("order", orderService.getOrderById(id).orElse(null));
+        return "order/orderUpdate";
     }
 
     @Override
-    @PutMapping("/{id}")
-    public ResponseEntity<Order> updateOrder(@PathVariable Long id, @RequestBody Order order) {
-        // Aquí extraemos el estado del pedido del objeto `order`
-        String status = order.getStatus();
-        
-        // Luego actualizamos el estado del pedido con el servicio
-        orderService.updateStatus(id, status);
-        
-        // Obtenemos la orden actualizada
-        Order updatedOrder = orderService.findById(id).orElse(null);
-        
-        if (updatedOrder != null) {
-            return ResponseEntity.ok(updatedOrder);
-        } else {
-            return ResponseEntity.notFound().build();
+    @PostMapping("/order/updatePost")
+    public String orderUpdatePost(@Valid Order order, BindingResult bindingResult, Principal principal, Model model, HttpServletRequest request) {
+        if (bindingResult.hasErrors()) {
+            log.error("Errores en el formulario de pedido: " + bindingResult.getAllErrors());
+            return "redirect:/order/updateGet/" + order.getId();
         }
+        orderService.saveOrder(order);
+        return "redirect:/orders";
     }
 
     @Override
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteOrder(@PathVariable Long id) {
-        orderService.deleteById(id);
-        return ResponseEntity.noContent().build();
+    @GetMapping("/order/addGet")
+    public String orderAddGet(Principal principal, Model model, HttpServletRequest request) {
+        log.info("Cargando formulario para agregar un nuevo pedido");
+        model.addAttribute("order", new Order());
+        return "order/orderAdd";
+    }
+
+    @Override
+    @PostMapping("/order/addPost")
+    public String orderAddPost(@Valid Order order, BindingResult bindingResult, Principal principal, Model model, HttpServletRequest request) {
+        if (bindingResult.hasErrors()) {
+            log.error("Errores en el formulario de pedido: " + bindingResult.getAllErrors());
+            return "order/orderAdd";
+        }
+        orderService.saveOrder(order);
+        return "redirect:/orders";
+    }
+
+    @Override
+    @GetMapping("/order/deleteGet/{id}")
+    public String orderDeleteGet(@PathVariable("id") Long id, Principal principal, Model model, HttpServletRequest request) {
+        log.info("Cargando página de eliminación para el pedido con ID: " + id);
+        model.addAttribute("order", orderService.getOrderById(id).orElse(null));
+        return "order/orderDelete";
+    }
+
+    @Override
+    @GetMapping("/order/deleteConfirmed/{id}")
+    public String orderDeleteConfirmed(@PathVariable("id") Long id, Principal principal, Model model, HttpServletRequest request) {
+        log.info("Eliminando pedido con ID: " + id);
+        orderService.deleteOrder(id);
+        return "redirect:/orders";
     }
 }
