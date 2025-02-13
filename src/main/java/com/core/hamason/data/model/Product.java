@@ -5,6 +5,8 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "product")
@@ -48,6 +50,10 @@ public class Product {
         return price.multiply(BigDecimal.ONE.subtract(discount.divide(BigDecimal.valueOf(100))))
                    .setScale(2, RoundingMode.HALF_UP); // Redondea a 2 decimales
     }
+    
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
+    private List<OrderLine> orderLines = new ArrayList<>();
 
 
 }
