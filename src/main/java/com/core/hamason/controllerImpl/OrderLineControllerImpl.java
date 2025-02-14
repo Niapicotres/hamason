@@ -4,44 +4,31 @@ import com.core.hamason.controller.IOrderLineController;
 import com.core.hamason.data.model.OrderLine;
 import com.core.hamason.service.IOrderLineService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequiredArgsConstructor
+@RequestMapping("/order-lines")
 public class OrderLineControllerImpl implements IOrderLineController {
 
     private final IOrderLineService orderLineService;
 
     @Override
-    public ResponseEntity<OrderLine> createOrderLine(OrderLine orderLine) {
-        OrderLine savedOrderLine = orderLineService.save(orderLine);
-        return ResponseEntity.ok(savedOrderLine);
-    }
-
-    @Override
-    public ResponseEntity<OrderLine> getOrderLineById(Long id) {
-        Optional<OrderLine> orderLine = orderLineService.findById(id);
-        return orderLine.map(ResponseEntity::ok).orElse(ResponseEntity.notFound().build());
-    }
-
-    @Override
-    public ResponseEntity<List<OrderLine>> getOrderLinesByOrderId(Long orderId) {
+    @GetMapping("/order/{orderId}")
+    public String showOrderLines(@PathVariable Long orderId, Model model) {
         List<OrderLine> orderLines = orderLineService.findByOrderId(orderId);
-        return ResponseEntity.ok(orderLines);
+        model.addAttribute("orderLines", orderLines);
+        return "order-lines"; // Nombre del template Thymeleaf
     }
 
     @Override
-    public ResponseEntity<List<OrderLine>> getAllOrderLines() {
-        return ResponseEntity.ok(orderLineService.findAll());
-    }
-
-    @Override
-    public ResponseEntity<Void> deleteOrderLine(Long id) {
+    @GetMapping("/delete/{id}")
+    public String deleteOrderLine(@PathVariable Long id) {
         orderLineService.delete(id);
-        return ResponseEntity.noContent().build();
+        return "redirect:/order-lines"; // Redirige a la lista después de eliminar
     }
 }
