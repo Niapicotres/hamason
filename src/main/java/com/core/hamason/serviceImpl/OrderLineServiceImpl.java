@@ -30,7 +30,7 @@ public class OrderLineServiceImpl implements IOrderLineService {
 
     @Override
     public List<OrderLine> findByOrderId(Long orderId) {
-//        Optional<Order> order = orderService.findById(orderId);
+        Optional<Order> order = orderService.getOrderById(orderId);
         return order.map(orderLineRepository::findByOrder).orElse(List.of());
     }
 

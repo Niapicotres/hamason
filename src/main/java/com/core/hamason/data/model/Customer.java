@@ -2,37 +2,44 @@ package com.core.hamason.data.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.io.Serializable;
-import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
-@Table(name = "CUSTOMERS")
+@Table(name = "customer")
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-@ToString
-public class Customer implements Serializable {
-
-    private static final long serialVersionUID = 1L;
+@AllArgsConstructor
+@Builder
+public class Customer {
 
     @Id
-    private String username; // Se usa el mismo username que en User
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @OneToOne
-    @MapsId
-    @JoinColumn(name = "username")
-    private User user; // Relación con User
+    @JoinColumn(name = "username", nullable = false)
+    private User user;
 
+    @Column(nullable = false)
     private String fullName;
+
+    @Column(nullable = false, unique = true)
     private String email;
+
+    @Column(nullable = false)
     private String phone;
+
+    @Column(nullable = false)
     private String address;
 
     @Column(nullable = false)
-    private String cardNumber; // Número de tarjeta
+    private String creditCardNumber;
 
     @Column(nullable = false)
-    private LocalDate cardExpiryDate; // Fecha de caducidad de la tarjeta
+    private String creditCardExpiry;
 
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    private Set<Order> orders;
 }
+
