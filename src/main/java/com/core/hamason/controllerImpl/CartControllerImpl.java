@@ -23,7 +23,7 @@ public class CartControllerImpl implements ICartController {
     @Override
     @GetMapping("/{customerId}")
     public String showCart(@PathVariable Long customerId, Model model) {
-        Optional<Customer> customer = customerService.findById(customerId);
+        Optional<Customer> customer = customerService.getCustomerById(customerId);
         if (customer.isPresent()) {
             Optional<Cart> cart = cartService.findByCustomer(customer.get());
             cart.ifPresent(value -> model.addAttribute("cart", value));
@@ -34,8 +34,9 @@ public class CartControllerImpl implements ICartController {
     @Override
     @GetMapping("/clear/{customerId}")
     public String clearCart(@PathVariable Long customerId) {
-        Optional<Customer> customer = customerService.findById(customerId);
+        Optional<Customer> customer = customerService.getCustomerById(customerId);
         customer.ifPresent(c -> cartService.findByCustomer(c).ifPresent(cartService::clearCart));
         return "redirect:/cart/" + customerId;
     }
 }
+ 

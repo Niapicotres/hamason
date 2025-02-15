@@ -5,6 +5,7 @@ import com.core.hamason.service.ICustomerService;
 import com.core.hamason.controller.ICustomerController;
 import org.springframework.stereotype.Controller;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 public class CustomerControllerImpl implements ICustomerController {
@@ -16,8 +17,10 @@ public class CustomerControllerImpl implements ICustomerController {
 
     @Override
     public Customer getCustomerById(Long id) {
-        return customerService.getCustomerById(id);
+        Optional<Customer> customerOpt = customerService.getCustomerById(id);
+        return customerOpt.orElseThrow(() -> new RuntimeException("Customer not found with id: " + id)); // Lanza una excepción si no se encuentra el cliente
     }
+
 
     @Override
     public Customer getCustomerByEmail(String email) {

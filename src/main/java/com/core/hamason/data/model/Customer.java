@@ -18,14 +18,8 @@ public class Customer {
     private Long id;
 
     @OneToOne
-    @JoinColumn(name = "username", nullable = false)
-    private User user;
-
-    @Column(nullable = false)
-    private String fullName;
-
-    @Column(nullable = false, unique = true)
-    private String email;
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;  // Relación con usuario
 
     @Column(nullable = false)
     private String phone;
@@ -39,7 +33,8 @@ public class Customer {
     @Column(nullable = false)
     private String creditCardExpiry;
 
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Order> orders;
 }
+
 

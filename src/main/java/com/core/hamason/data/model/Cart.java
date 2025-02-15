@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 @Entity
-@Table(name = "cart")
+@Table(name = "cart") // Mantiene la tabla original
 @Getter
 @Setter
 @NoArgsConstructor

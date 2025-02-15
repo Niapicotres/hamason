@@ -1,24 +1,24 @@
-13-02-2025 12:23:29 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.4 with PID 10588 (C:\Users\manana\eclipse-workspace\hamason\target\classes started by manana in C:\Users\manana\eclipse-workspace\hamason)
-13-02-2025 12:23:29 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
-13-02-2025 12:23:29 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-13-02-2025 12:23:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-13-02-2025 12:23:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-13-02-2025 12:23:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
-13-02-2025 12:23:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-13-02-2025 12:23:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-13-02-2025 12:23:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-13-02-2025 12:23:31 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
-13-02-2025 12:23:31 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1993 ms
-13-02-2025 12:23:31 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-13-02-2025 12:23:31 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
-13-02-2025 12:23:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-13-02-2025 12:23:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
-13-02-2025 12:23:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-13-02-2025 12:23:32 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-13-02-2025 12:23:32 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
-13-02-2025 12:23:32 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-13-02-2025 12:23:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-13-02-2025 12:23:32 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+15-02-2025 15:13:15 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.5 with PID 10584 (C:\Users\nia_p\eclipse-workspace\hamason\target\classes started by nia_p in C:\Users\nia_p\eclipse-workspace\hamason)
+15-02-2025 15:13:15 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+15-02-2025 15:13:15 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15-02-2025 15:13:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+15-02-2025 15:13:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-02-2025 15:13:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 9 JPA repository interfaces.
+15-02-2025 15:13:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+15-02-2025 15:13:16 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15-02-2025 15:13:16 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+15-02-2025 15:13:16 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+15-02-2025 15:13:16 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1268 ms
+15-02-2025 15:13:16 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+15-02-2025 15:13:16 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+15-02-2025 15:13:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15-02-2025 15:13:16 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+15-02-2025 15:13:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15-02-2025 15:13:16 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-02-2025 15:13:16 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+15-02-2025 15:13:16 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+15-02-2025 15:13:17 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+15-02-2025 15:13:17 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -26,112 +26,132 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-13-02-2025 12:23:33 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-13-02-2025 12:23:33 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-13-02-2025 12:23:34 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name daoAuthenticationProvider
-13-02-2025 12:23:34 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
-13-02-2025 12:23:34 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
-13-02-2025 12:23:34 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 30 mappings in 'requestMappingHandlerMapping'
-13-02-2025 12:23:34 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-13-02-2025 12:23:34 INFO  c.c.hamason.config.WebSecurityConfig - *********** httpSecurity.getSharedObjects()= {interface org.springframework.web.accept.ContentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@3b91883c, class org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder=org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration$DefaultPasswordEncoderAuthenticationManagerBuilder@5b898dae, interface org.springframework.context.ApplicationContext=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3312a9aa, started on Thu Feb 13 12:23:29 CET 2025}
-13-02-2025 12:23:35 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-13-02-2025 12:23:35 DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-13-02-2025 12:23:35 INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2'. Database available at 'jdbc:h2:mem:hamason'
-13-02-2025 12:23:35 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-13-02-2025 12:23:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/hamason'
-13-02-2025 12:23:35 INFO  com.core.hamason.HamasonApplication - Started HamasonApplication in 6.241 seconds (process running for 7.065)
-13-02-2025 12:24:19 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-13-02-2025 12:24:19 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected SessionLocaleResolver
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3c8aa516
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@78f40d0d
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-13-02-2025 12:24:19 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
-13-02-2025 12:24:19 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.ProductControllerImpl#productListGet(Principal, Model, HttpServletRequest)
-13-02-2025 12:24:19 INFO  c.c.h.c.ProductControllerImpl - Cargando la lista de productos
-13-02-2025 12:24:19 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
-13-02-2025 12:24:19 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:24:19 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:24:19 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:24:20 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
-13-02-2025 12:24:20 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
-13-02-2025 12:24:20 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
-13-02-2025 12:24:20 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:04 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
-13-02-2025 12:25:04 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.ProductControllerImpl#productListGet(Principal, Model, HttpServletRequest)
-13-02-2025 12:25:04 INFO  c.c.h.c.ProductControllerImpl - Cargando la lista de productos
-13-02-2025 12:25:04 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-13-02-2025 12:25:04 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:04 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
-13-02-2025 12:25:04 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
-13-02-2025 12:25:04 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:25:04 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:25:04 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:04 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:05 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
-13-02-2025 12:25:05 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
-13-02-2025 12:25:05 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
-13-02-2025 12:25:05 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
-13-02-2025 12:25:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.ProductControllerImpl#productListGet(Principal, Model, HttpServletRequest)
-13-02-2025 12:25:06 INFO  c.c.h.c.ProductControllerImpl - Cargando la lista de productos
-13-02-2025 12:25:06 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
-13-02-2025 12:25:06 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
-13-02-2025 12:25:06 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
-13-02-2025 12:25:06 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
-13-02-2025 12:25:06 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
-13-02-2025 12:25:06 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
-13-02-2025 12:42:25 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.ProductControllerImpl#productListGet(Principal, Model, HttpServletRequest)
-13-02-2025 12:42:25 INFO  c.c.h.c.ProductControllerImpl - Cargando la lista de productos
-13-02-2025 12:42:25 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
-13-02-2025 12:42:25 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:42:25 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
-13-02-2025 12:42:25 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
-13-02-2025 12:42:25 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
-13-02-2025 12:42:25 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/", parameters={}
-13-02-2025 12:42:27 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.ProductControllerImpl#productListGet(Principal, Model, HttpServletRequest)
-13-02-2025 12:42:27 INFO  c.c.h.c.ProductControllerImpl - Cargando la lista de productos
-13-02-2025 12:42:27 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
-13-02-2025 12:42:27 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/js/scripts.js", parameters={}
-13-02-2025 12:42:27 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/loginGet", parameters={}
-13-02-2025 12:42:27 DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.core.hamason.controllerImpl.StartControllerImpl#loginGet(Model)
-13-02-2025 12:42:27 DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
-13-02-2025 12:42:27 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:42:46 DEBUG o.s.web.servlet.DispatcherServlet - GET "/hamason/css/styles.css", parameters={}
-13-02-2025 12:42:46 DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
-13-02-2025 12:42:46 DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-13-02-2025 12:43:17 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-13-02-2025 12:43:17 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-13-02-2025 12:43:17 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-13-02-2025 12:43:17 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-13-02-2025 12:43:17 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+15-02-2025 15:13:17 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Collection 'com.core.hamason.data.model.Cart.items' is 'mappedBy' a property named 'cart' which does not exist in the target entity 'com.core.hamason.data.model.CartItem'
+15-02-2025 15:13:17 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.hamason.data.model.Cart.items' is 'mappedBy' a property named 'cart' which does not exist in the target entity 'com.core.hamason.data.model.CartItem'
+15-02-2025 15:13:17 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
 Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-13-02-2025 12:43:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-13-02-2025 12:43:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15-02-2025 15:13:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15-02-2025 15:13:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15-02-2025 15:13:17 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+15-02-2025 15:13:17 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+15-02-2025 15:13:17 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Collection 'com.core.hamason.data.model.Cart.items' is 'mappedBy' a property named 'cart' which does not exist in the target entity 'com.core.hamason.data.model.CartItem'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.core.hamason.HamasonApplication.main(HamasonApplication.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Collection 'com.core.hamason.data.model.Cart.items' is 'mappedBy' a property named 'cart' which does not exist in the target entity 'com.core.hamason.data.model.CartItem'
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1638)
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1652)
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1613)
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1604)
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1842)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1800)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+15-02-2025 15:37:51 INFO  com.core.hamason.HamasonApplication - Starting HamasonApplication using Java 21.0.5 with PID 1136 (C:\Users\nia_p\eclipse-workspace\hamason\target\classes started by nia_p in C:\Users\nia_p\eclipse-workspace\hamason)
+15-02-2025 15:37:51 INFO  com.core.hamason.HamasonApplication - No active profile set, falling back to 1 default profile: "default"
+15-02-2025 15:37:51 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+15-02-2025 15:37:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+15-02-2025 15:37:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15-02-2025 15:37:52 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 9 JPA repository interfaces.
+15-02-2025 15:37:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+15-02-2025 15:37:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+15-02-2025 15:37:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+15-02-2025 15:37:52 INFO  o.a.c.c.C.[.[localhost].[/hamason] - Initializing Spring embedded WebApplicationContext
+15-02-2025 15:37:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1097 ms
+15-02-2025 15:37:52 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: springSessionRepositoryFilter urls=[/*] order=-2147483598, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+15-02-2025 15:37:52 DEBUG o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/], h2Console urls=[/h2/*]
+15-02-2025 15:37:52 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+15-02-2025 15:37:53 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:hamason user=SAS
+15-02-2025 15:37:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+15-02-2025 15:37:53 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+15-02-2025 15:37:53 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.5.Final
+15-02-2025 15:37:53 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+15-02-2025 15:37:53 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+15-02-2025 15:37:53 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+15-02-2025 15:37:53 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Association 'com.core.hamason.data.model.Customer.orders' is 'mappedBy' a property named 'customer' which references the wrong entity type 'com.core.hamason.data.model.User', expected 'com.core.hamason.data.model.Customer'
+15-02-2025 15:37:53 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Association 'com.core.hamason.data.model.Customer.orders' is 'mappedBy' a property named 'customer' which references the wrong entity type 'com.core.hamason.data.model.User', expected 'com.core.hamason.data.model.Customer'
+15-02-2025 15:37:53 WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+15-02-2025 15:37:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+15-02-2025 15:37:53 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+15-02-2025 15:37:53 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+15-02-2025 15:37:53 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+15-02-2025 15:37:53 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Association 'com.core.hamason.data.model.Customer.orders' is 'mappedBy' a property named 'customer' which references the wrong entity type 'com.core.hamason.data.model.User', expected 'com.core.hamason.data.model.Customer'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.core.hamason.HamasonApplication.main(HamasonApplication.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.AnnotationException: Association 'com.core.hamason.data.model.Customer.orders' is 'mappedBy' a property named 'customer' which references the wrong entity type 'com.core.hamason.data.model.User', expected 'com.core.hamason.data.model.Customer'
+	at org.hibernate.boot.model.internal.BinderHelper.checkMappedByType(BinderHelper.java:1164)
+	at org.hibernate.boot.model.internal.CollectionBinder.isReversePropertyInJoin(CollectionBinder.java:1641)
+	at org.hibernate.boot.model.internal.CollectionBinder.noAssociationTable(CollectionBinder.java:1652)
+	at org.hibernate.boot.model.internal.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:1613)
+	at org.hibernate.boot.model.internal.CollectionBinder$1.secondPass(CollectionBinder.java:1604)
+	at org.hibernate.boot.model.internal.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1842)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1800)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:334)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted

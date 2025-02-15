@@ -5,6 +5,7 @@ import com.core.hamason.data.repository.ICustomerRepository;
 import com.core.hamason.service.ICustomerService;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CustomerServiceImpl implements ICustomerService {
@@ -15,8 +16,8 @@ public class CustomerServiceImpl implements ICustomerService {
     }
 
     @Override
-    public Customer getCustomerById(Long id) {
-        return customerRepository.findById(id).orElse(null);
+    public Optional<Customer> getCustomerById(Long id) {
+        return customerRepository.findById(id);
     }
 
     @Override

@@ -9,10 +9,10 @@ import lombok.Setter;
 
 
 import java.math.BigDecimal;
-import java.util.List;
+
 
 @Entity
-@Table(name = "cart")
+@Table(name = "cart_item") // Nombre correcto de la tabla
 @Getter
 @Setter
 @NoArgsConstructor
@@ -24,16 +24,21 @@ public class CartItem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "customer_id", nullable = false)
-    private Customer customer;  // Relación con el cliente
+    @ManyToOne // Relación correcta con Cart
+    @JoinColumn(name = "cart_id", nullable = false)
+    private Cart cart;
 
-    @OneToMany(mappedBy = "cart", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<CartItem> items;  // Relación con los productos en el carrito
+    @ManyToOne // Un producto puede estar en varios carritos
+    @JoinColumn(name = "product_id", nullable = false)
+    private Product product;
+
+    @Column(nullable = false)
+    private int quantity;
+
+    @Column(nullable = false, precision = 10, scale = 2)
+    private BigDecimal price;
 
     public BigDecimal getTotalPrice() {
-        return items.stream()
-                .map(CartItem::getTotalPrice)
-                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        return price.multiply(BigDecimal.valueOf(quantity));
     }
 }
