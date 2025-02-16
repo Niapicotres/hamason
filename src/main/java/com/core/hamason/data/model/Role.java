@@ -1,12 +1,10 @@
 package com.core.hamason.data.model;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.Set;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
@@ -30,7 +28,7 @@ public class Role implements Serializable {
 	@Id
 	private String rolename;
 	
-//	@ManyToMany
-//	private Set<User> userSet;
+	@ManyToMany
+	private Set<User> userSet;
 	
 }

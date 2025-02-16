@@ -22,8 +22,10 @@ public class CustomerServiceImpl implements ICustomerService {
 
     @Override
     public Customer getCustomerByEmail(String email) {
-        return customerRepository.findByEmail(email);
+        return customerRepository.findByEmail(email)
+                                 .orElseThrow(() -> new RuntimeException("Customer not found with email: " + email));
     }
+
 
     @Override
     public List<Customer> getAllCustomers() {

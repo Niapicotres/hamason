@@ -21,6 +21,9 @@ public class Customer {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;  // Relación con usuario
 
+    @Column(nullable = false, unique = true)
+    private String email;  // Campo email agregado
+
     @Column(nullable = false)
     private String phone;
 
@@ -36,5 +39,3 @@ public class Customer {
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Order> orders;
 }
-
-

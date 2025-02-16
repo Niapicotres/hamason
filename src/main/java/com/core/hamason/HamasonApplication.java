@@ -2,7 +2,7 @@ package com.core.hamason;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
+import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.boot.CommandLineRunner;
@@ -14,6 +14,7 @@ import com.core.hamason.data.model.FamilyCategory;
 import com.core.hamason.data.model.Product;
 import com.core.hamason.data.model.Role;
 import com.core.hamason.data.model.User;
+
 import com.core.hamason.data.repository.IRoleRepository;
 import com.core.hamason.data.repository.IFamilyCategoryRepository;
 import com.core.hamason.data.repository.IProductRepository;
@@ -34,40 +35,10 @@ public class HamasonApplication {
 		IProductRepository productRepository  
 			) 
 	{ return args -> {
-		roleRepository.save(new Role("ADMIN"));
-		roleRepository.save(new Role("USER"));
-		roleRepository.save(new Role("MANAGER"));
-		
-		roleRepository.save(new Role("EMPLOYEE"));
-		roleRepository.save(new Role("CUSTOMER"));
-
-		userRepository.save(new User("ana", "ana@gmail.com", "$2a$12$LLE1DtYpn9la045NGdITZebqhtqMDtexqlLct0SE0cHuE9MtqN7Yu" /*anaPass*/, "Ana Perez", 
-				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
-				true, false, Set.of(roleRepository.findById("ADMIN").get(),
-						roleRepository.findById("MANAGER").get()
-						)));
-		userRepository.save(new User("luis", "luis@gmail.com", "$2a$12$GRfg5oZ1Dh3VaCR1VLit1eh6hTXC0FzL1PRJADPs9.mcCCokyMDje" /*"luisPass"*/, "Luis Sanchez", 
-				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
-				true, false, Set.of(roleRepository.findById("USER").get()
-						)));
-		userRepository.save(new User("eva", "eva@gmail.com", "$2a$12$tSThCftgzCyejVRUjvqJa.5ibrmZRgXvmjElfx5idN2tjgeTN04pC" /*"evaPass"*/, "Eva Gomez", 
-				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
-				true, false, Set.of(roleRepository.findById("ADMIN").get()
-						)));
-		
-		
-		userRepository.save(new User("niaCustomer", "nia@gmail.com", "$2a$12$tSThCftgzCyejVRUjvqJa.5ibrmZRgXvmjElfx5idN2tjgeTN04pC" /*"niaPass"*/, "Nia Rozo", 
-				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
-				true, false, Set.of(roleRepository.findById("CUSTOMER").get()
-						)));	
-		userRepository.save(new User("niaEmployee", "nia@gmail.com", "$2a$12$tSThCftgzCyejVRUjvqJa.5ibrmZRgXvmjElfx5idN2tjgeTN04pC" /*"niaPass"*/, "Nia Rozo", 
-				LocalDate.now().plusMonths(1), LocalDate.now().plusMonths(1), 
-				true, false, Set.of(roleRepository.findById("EMPLOYEE").get()
-						)));
 	
 	
 		
-		    
+		  
 		//BEFORE INSERT DATA PRODUCTS SAVE CATEGORY
 		    FamilyCategory food = familyCategoryRepository.save(new FamilyCategory(null, "FOOD", null));
 	        FamilyCategory electronics = familyCategoryRepository.save(new FamilyCategory(null, "ELECTRONICS", null));

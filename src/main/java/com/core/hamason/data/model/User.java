@@ -13,10 +13,14 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
 import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,93 +31,55 @@ import lombok.extern.slf4j.Slf4j;
 
 @Entity
 @Table(name = "USERS")
-
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-@Slf4j
 public class User implements Serializable, UserDetails {
 
-	private static final long serialVersionUID = 1L;
-	
-	@Id
-	private String username;
-	
-	private String email;
-	private String password;
-	private String fullname;
-	private LocalDate expiryDateAccount;
-	private LocalDate expiryDateCredentials;
-	private Boolean enabled;
-	private Boolean lockedAccount;
+    private static final long serialVersionUID = 1L;
 
-	@ManyToMany
-	@JoinTable(name = "USERS_HAS_ROLES")
-	private Set<Role> roleSet;
+    @Id
+    private String username;
 
-	@Override
-	public int hashCode() {
-		return Objects.hash(email, enabled, expiryDateAccount, expiryDateCredentials, fullname, lockedAccount, password,
-				roleSet, username);
-	}
+    private String email;
+    private String password;
+    private String fullname;
+    private LocalDate expiryDateAccount;
+    private LocalDate expiryDateCredentials;
+    private Boolean enabled;
+    private Boolean lockedAccount;
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		User other = (User) obj;
-		return Objects.equals(username, other.username);
-	}
+    @ManyToMany
+    @JoinTable(name = "USERS_HAS_ROLES")
+    private Set<Role> roleSet;
 
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// Declare new list of granted authorities
-		List<SimpleGrantedAuthority> simpleGrantedAuthorityList = new ArrayList<>();
-		// Get roles from authenticated user
-		this.getRoleSet().stream()
-			.map(x -> x.getRolename())
-			.forEach(x -> simpleGrantedAuthorityList.add(new SimpleGrantedAuthority(x)));
-		// Show granted authorities
-		log.info("Roles from " + this.getUsername() + ": " +
-			simpleGrantedAuthorityList.stream()	
-				.map(x -> x.getAuthority())
-				.collect(Collectors.joining("|", "{", "}"))
-				);
-		//
-		return simpleGrantedAuthorityList;
-	}
+    // Implementación de los métodos de UserDetails
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        List<SimpleGrantedAuthority> authorities = new ArrayList<>();
+        this.roleSet.stream().map(role -> authorities.add(new SimpleGrantedAuthority(role.getRolename())));
+        return authorities;
+    }
 
-	@Override
-	public boolean isAccountNonExpired() {
-		//return UserDetails.super.isAccountNonExpired();
-		return this.getExpiryDateAccount().isAfter(LocalDate.now()); 
-	}
+    @Override
+    public boolean isAccountNonExpired() {
+        return this.expiryDateAccount.isAfter(LocalDate.now());
+    }
 
-	@Override
-	public boolean isAccountNonLocked() {
-		//return UserDetails.super.isAccountNonLocked();
-		return !this.getLockedAccount();
-	}
+    @Override
+    public boolean isAccountNonLocked() {
+        return !this.lockedAccount;
+    }
 
-	@Override
-	public boolean isCredentialsNonExpired() {
-		//return UserDetails.super.isCredentialsNonExpired();
-		return this.getExpiryDateCredentials().isAfter(LocalDate.now());
-	}
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return this.expiryDateCredentials.isAfter(LocalDate.now());
+    }
 
-	@Override
-	public boolean isEnabled() {
-		//return UserDetails.super.isEnabled();
-		return this.getEnabled();
-	}
-
-	
-	
-	
+    @Override
+    public boolean isEnabled() {
+        return this.enabled;
+    }
 }

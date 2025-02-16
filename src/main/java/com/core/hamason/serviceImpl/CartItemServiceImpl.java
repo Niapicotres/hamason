@@ -3,7 +3,8 @@ package com.core.hamason.serviceImpl;
 import com.core.hamason.data.model.Cart;
 import com.core.hamason.data.model.Customer;
 import com.core.hamason.data.repository.ICartRepository;
-import com.core.hamason.service.ICartService;
+import com.core.hamason.service.ICartItemService;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +12,7 @@ import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
-public class CartItemServiceImpl implements ICartService {
+public class CartItemServiceImpl implements ICartItemService {
 
     private final ICartRepository cartRepository;
 

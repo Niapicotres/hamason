@@ -1,8 +1,10 @@
 package com.core.hamason.data.model;
 
+import java.time.LocalDate;
 import java.util.Set;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -37,4 +39,11 @@ public class Order {
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<OrderLine> orderLines;
+    
+    @Column(nullable = false, updatable = false)
+    private LocalDate creationDate;  // Nuevo campo
+    
+    public void setCreationDate(LocalDate creationDate) {
+        this.creationDate = creationDate;
+    }
 }

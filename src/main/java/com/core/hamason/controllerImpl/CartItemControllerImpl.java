@@ -1,4 +1,4 @@
- package com.core.hamason.controllerImpl;
+package com.core.hamason.controllerImpl;
 
 import com.core.hamason.controller.ICartController;
 import com.core.hamason.data.model.Cart;
@@ -14,8 +14,8 @@ import java.util.Optional;
 
 @Controller
 @RequiredArgsConstructor
-@RequestMapping("/cart/items")
-public class CartControllerImpl implements ICartController {
+@RequestMapping("/cart")
+public class CartItemControllerImpl implements ICartController {
 
     private final ICartService cartService;
     private final ICustomerService customerService;
