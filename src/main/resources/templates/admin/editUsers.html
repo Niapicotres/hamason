@@ -104,20 +104,24 @@
 				
 				    <div data-mdb-input-init class="form-outline mb-4">
 				        <label class="form-label" for="form2Example17">Email address</label>
+				        <input th:field="*{email}" type="text" class="form-control form-control-lg" name="username" placeholder="Username"/>
+				    </div>
+				    <div data-mdb-input-init class="form-outline mb-4">
+				        <label class="form-label" for="form2Example17">Username</label>
 				        <input th:field="*{username}" type="text" class="form-control form-control-lg" name="username" placeholder="Username"/>
 				    </div>
 				
 				    <div data-mdb-input-init class="form-outline mb-4">
-				        <label class="form-label" for="form2Example27">Password</label>
-				        <input th:field="*{password}"  type="password" class="form-control form-control-lg" name="password" placeholder="Password"/>
+				        <label class="form-label" for="form2Example27">Name User</label>
+				        <input th:field="*{fullname}"  type="text" class="form-control form-control-lg" name="password" placeholder="Password"/>
 				    </div>
 				
 				    <!-- Mensaje de error en la plantilla -->
 				    <p th:text="${errorMsg}" class="text-danger"></p>
 				
 				    <div class="pt-1 mb-4">
-				        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="submit">
-				            Login
+				        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="submit" th:action=${/updateUser}>
+				            Update
 				        </button>
 				    </div>
 				

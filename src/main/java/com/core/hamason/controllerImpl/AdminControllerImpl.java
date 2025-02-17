@@ -55,7 +55,9 @@ public class AdminControllerImpl implements IAdminController {
     public String editUser(@RequestParam("username") String username, Model model) {
         User user = userService.findByUsername(username).orElse(new User());
         model.addAttribute("user", user);
+        
         log.info("EDIT USER: " + user.getUsername());
+        log.info("nombre USER: " + user);
         return "admin/editUsers"; 
     }
 
