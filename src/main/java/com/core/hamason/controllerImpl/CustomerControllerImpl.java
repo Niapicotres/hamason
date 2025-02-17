@@ -1,53 +1,50 @@
 package com.core.hamason.controllerImpl;
 
+import com.core.hamason.controller.ICustomerController;
 import com.core.hamason.data.model.Customer;
 import com.core.hamason.service.ICustomerService;
-import com.core.hamason.controller.ICustomerController;
-
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
-import java.util.Optional;
 
+@Slf4j
 @Controller
+@RequestMapping("/admin/customers")
 public class CustomerControllerImpl implements ICustomerController {
-	
 
-    
     @Autowired
-    private ICustomerService customerService ;
+    private ICustomerService customerService;
 
-    
-    
-    public CustomerControllerImpl(ICustomerService customerService) {
-        this.customerService = customerService;
-    }
-    
-  
-    @Override
-    public Customer getCustomerById(Long id) {
-        Optional<Customer> customerOpt = customerService.getCustomerById(id);
-        return customerOpt.orElseThrow(() -> new RuntimeException("Customer not found with id: " + id)); // Lanza una excepción si no se encuentra el cliente
-    }
-
-
-    @Override
-    public Customer getCustomerByEmail(String email) {
-        return customerService.getCustomerByEmail(email);
-    }
-
+    @GetMapping
     @Override
     public List<Customer> getAllCustomers() {
         return customerService.getAllCustomers();
     }
 
+    @GetMapping("/{username}")
     @Override
-    public Customer saveCustomer(Customer customer) {
-        return customerService.saveCustomer(customer);
+    public String getCustomerById(@PathVariable String username, Model model) {
+        Customer customer = customerService.getCustomerById(username)
+                .orElseThrow(() -> new RuntimeException("Customer not found"));
+        model.addAttribute("customer", customer);
+        return "admin/editCustomer";
     }
 
+    @PostMapping("/save")
     @Override
-    public void deleteCustomer(Long id) {
-        customerService.deleteCustomer(id);
+    public String saveCustomer(@ModelAttribute Customer customer) {
+        customerService.saveCustomer(customer);
+        return "redirect:/admin/customers";
+    }
+
+    @GetMapping("/delete/{username}")
+    @Override
+    public String deleteCustomer(@PathVariable String username) {
+        customerService.deleteCustomer(username);
+        return "redirect:/admin/customers";
     }
 }

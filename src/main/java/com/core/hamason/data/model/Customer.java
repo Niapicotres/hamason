@@ -1,41 +1,25 @@
 package com.core.hamason.data.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.DiscriminatorValue;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import lombok.*;
-import java.util.Set;
+
+import java.io.Serializable;
 
 @Entity
-@Table(name = "customer")
+@DiscriminatorValue("CUSTOMER")  // Marca los registros de Customer en la tabla USERS
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class Customer {
+@ToString(callSuper = true)
+public class Customer extends User implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private static final long serialVersionUID = 1L;
 
-    @OneToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;  // Relación con usuario
-
-    @Column(nullable = false, unique = true)
-    private String email;  // Campo email agregado
-
-    @Column(nullable = false)
+    private String shippingAddress;
     private String phone;
-
-    @Column(nullable = false)
-    private String address;
-
-    @Column(nullable = false)
     private String creditCardNumber;
-
-    @Column(nullable = false)
     private String creditCardExpiry;
-
-    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, orphanRemoval = true)
-    private Set<Order> orders;
 }

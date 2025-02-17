@@ -15,6 +15,8 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import jakarta.persistence.CascadeType;
+import jakarta.persistence.DiscriminatorColumn;
+import jakarta.persistence.DiscriminatorType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
@@ -31,7 +33,9 @@ import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
 
 @Entity
-@Table(name = "USERS")
+@Table(name = "USERS")  // La tabla para toda la jerarquía
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)  // Estrategia de herencia
+@DiscriminatorColumn(name = "user_type", discriminatorType = DiscriminatorType.STRING) // Diferencia User de Customer
 @Getter
 @Setter
 @AllArgsConstructor

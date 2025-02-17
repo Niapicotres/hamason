@@ -1,12 +1,12 @@
 package com.core.hamason.controller;
 
 import com.core.hamason.data.model.Customer;
+import org.springframework.ui.Model;
 import java.util.List;
 
 public interface ICustomerController {
-    Customer getCustomerById(Long id);
-    Customer getCustomerByEmail(String email);
     List<Customer> getAllCustomers();
-    Customer saveCustomer(Customer customer);
-    void deleteCustomer(Long id);
+    String getCustomerById(String username, Model model);
+    String saveCustomer(Customer customer);
+    String deleteCustomer(String username);
 }

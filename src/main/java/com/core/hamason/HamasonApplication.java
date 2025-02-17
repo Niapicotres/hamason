@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.core.hamason.data.model.Customer;
 import com.core.hamason.data.model.FamilyCategory;
 import com.core.hamason.data.model.Product;
 import com.core.hamason.data.model.Role;
@@ -70,11 +71,13 @@ public class HamasonApplication {
             userRepository.save(admin);
         }
 
-        // Crear usuario CUSTOMER si no existe
+  
+     // Crear usuario CUSTOMER si no existe
         if (userRepository.findById("jane").isEmpty()) {
-            User customer = new User();
+            Customer customer = new Customer();  
+
             customer.setUsername("jane");
-            customer.setPassword(passwordEncoder.encode("janePass"));
+            customer.setPassword(passwordEncoder.encode("janePass")); // Contraseña cifrada
             customer.setEmail("jane@example.com");
             customer.setFullname("Jane Customer");
             customer.setEnabled(true);
@@ -82,13 +85,51 @@ public class HamasonApplication {
             customer.setExpiryDateAccount(LocalDate.now().plusYears(1));
             customer.setExpiryDateCredentials(LocalDate.now().plusYears(1));
 
+           
+            customer.setShippingAddress("123 Main Street, New York");
+            customer.setPhone("+1 555 123 456");
+            customer.setCreditCardNumber("4111111111111111");
+            customer.setCreditCardExpiry("12/26");
+
+       
             Set<Role> roles = new HashSet<>();
             roles.add(roleRepository.findById("CUSTOMER").get());
             customer.setRoleSet(roles);
 
+           
             userRepository.save(customer);
         }
         
+        if (userRepository.findById("Luis").isEmpty()) {
+            Customer customer = new Customer();  
+
+            customer.setUsername("Luis");
+            customer.setPassword(passwordEncoder.encode("luisPass")); // Contraseña cifrada
+            customer.setEmail("luis@example.com");
+            customer.setFullname("Luis Customer");
+            customer.setEnabled(true);
+            customer.setLockedAccount(false);
+            customer.setExpiryDateAccount(LocalDate.now().plusYears(1));
+            customer.setExpiryDateCredentials(LocalDate.now().plusYears(1));
+
+           
+            customer.setShippingAddress("123 Tampa, Florida");
+            customer.setPhone("+1 995 173 856");
+            customer.setCreditCardNumber("4111111111111111");
+            customer.setCreditCardExpiry("12/29");
+
+       
+            Set<Role> roles = new HashSet<>();
+            roles.add(roleRepository.findById("CUSTOMER").get());
+            customer.setRoleSet(roles);
+
+           
+            userRepository.save(customer);
+        }
+
+        
+        
+        // crear employee
         if (userRepository.findById("employee").isEmpty()) {
             User admin = new User();
             admin.setUsername("employee");
@@ -108,6 +149,11 @@ public class HamasonApplication {
 
             userRepository.save(admin);
         }
+        
+        
+        
+        
+        
 		  
 		//BEFORE INSERT DATA PRODUCTS SAVE CATEGORY
 		    FamilyCategory food = familyCategoryRepository.save(new FamilyCategory(null, "FOOD", null));
