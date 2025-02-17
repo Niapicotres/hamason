@@ -13,14 +13,14 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.crypto.argon2.Argon2PasswordEncoder;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
 import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 //import com.core.timmyProfe.data.repository.IUserRepository;
 //import com.core.timmyProfe.service.IUserService;
 //import com.core.timmyProfe.serviceImpl.UserServiceImpl;
-import com.core.hamason.service.IUserService;
+import com.core.hamason.serviceImpl.UserServiceImpl;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -39,8 +39,10 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class WebSecurityConfig {
 	
+
+	
 	@Autowired
-	private IUserService userService;
+	private UserServiceImpl userServiceImpl;
 	
 	@Bean
 	SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
@@ -51,17 +53,16 @@ public class WebSecurityConfig {
                 .headers(headers -> headers.frameOptions(Customizer.withDefaults()).disable()) //Necesario para que salgan todos los marcos de /h2
                 .csrf(csrf -> csrf.ignoringRequestMatchers("/h2/**")) // Para permitir acceso a /h2/** sin CSRF
                 .authorizeHttpRequests((authorize) -> authorize
-			        	.requestMatchers("/", "/index", "/login*", "/h2/**").permitAll()
-			        	.requestMatchers("/img/**").permitAll()
-			        	.requestMatchers("/css/**").permitAll()
-			        	.requestMatchers("/js/**").permitAll()
-			        	.requestMatchers("/loginPost").authenticated()
-                        .anyRequest().authenticated()) //antes de entrar al master tiene que estar autenticado
+                		.requestMatchers("/", "/index", "/login*", "/h2/**", "/img/**", "/css/**", "/js/**").permitAll()
+                        .requestMatchers("/loginPost").permitAll() // Permitir el endpoint de loginPost
+                        .requestMatchers("/admin/**").hasRole("ADMIN") // Solo ADMIN puede acceder a /admin/**
+                        .anyRequest().authenticated() 
+                        ) //antes de entrar al master tiene que estar autenticado
                 //.formLogin(Customizer.withDefaults());	
                 .formLogin(formLogin -> {
                     formLogin
                       .loginPage("/loginGet") // Login page will be accessed through this endpoint. We will create a controller method for this.
-                      //.loginProcessingUrl("/login-processing") // This endpoint will be mapped internally. This URL will be our Login form post action.
+                      .loginProcessingUrl("/loginPost") // This endpoint will be mapped internally. This URL will be our Login form post action.
                       //.usernameParameter("username")
                       //.passwordParameter("password")
                       .permitAll() // We re permitting all for login page
@@ -81,6 +82,30 @@ public class WebSecurityConfig {
 		return httpSecurity.build();
 	}
 	
+	
+	@Bean
+	AuthenticationSuccessHandler customAuthenticationSuccessHandler() {
+	    return (request, response, authentication) -> {
+	        authentication.getAuthorities().forEach(authority -> {
+	            if (authority.getAuthority().equals("ROLE_ADMIN")) {
+	                try {
+	                    response.sendRedirect("/admin/adminIndex");
+	                } catch (Exception e) {
+	                    e.printStackTrace();
+	                }
+	            } else {
+	                try {
+	                    response.sendRedirect("/welcome");
+	                } catch (Exception e) {
+	                    e.printStackTrace();
+	                }
+	            }
+	        });
+	    };
+	}
+	
+	
+	
 
 	@Bean
 	AuthenticationManager authenticationManager(HttpSecurity httpSecurity) 
@@ -95,7 +120,7 @@ public class WebSecurityConfig {
 	DaoAuthenticationProvider daoAuthenticationProvider() {
 		DaoAuthenticationProvider daoAuthenticationProvider =
 				new DaoAuthenticationProvider();
-		daoAuthenticationProvider.setUserDetailsService(this.userService);
+		daoAuthenticationProvider.setUserDetailsService(userServiceImpl);
 //		daoAuthenticationProvider.setUserDetailsService(userDetailsService());
 		daoAuthenticationProvider.setPasswordEncoder(passwordEncoderBCrypt());
 		return daoAuthenticationProvider;
@@ -108,27 +133,27 @@ public class WebSecurityConfig {
 		return new BCryptPasswordEncoder();
 	}
 	
-	@Bean
-	PasswordEncoder passwordEncoderSCrypt() {
-		return SCryptPasswordEncoder.defaultsForSpringSecurity_v5_8();  
-		// Don's use constructor, it needs several parameters.
-		// Instead use method defaultsForSpringSecurity_v5_8() that
-		// constructs a SCrypt password encoder with cpu cost of 65,536, 
-		// memory cost of 8,parallelization of 1, a key length of 32 and 
-		// a salt length of 16 bytes.
-	}
+//	@Bean
+//	PasswordEncoder passwordEncoderSCrypt() {
+//		return SCryptPasswordEncoder.defaultsForSpringSecurity_v5_8();  
+//		// Don's use constructor, it needs several parameters.
+//		// Instead use method defaultsForSpringSecurity_v5_8() that
+//		// constructs a SCrypt password encoder with cpu cost of 65,536, 
+//		// memory cost of 8,parallelization of 1, a key length of 32 and 
+//		// a salt length of 16 bytes.
+//	}
 	
-	@Bean
-	PasswordEncoder passwordEncoderArgon2() {
-		return Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8(); //new Pbkdf2PasswordEncoder();
-		// Don's use constructor, it needs several parameters.
-		// Instead use method defaultsForSpringSecurity_v5_8() that
-		// constructs a PBKDF2 password encoder with no additional secret value. 
-		// There will be a salt length of 16 bytes, 310,000 iterations, SHA-256 algorithm 
-		// and a hash length of 256 bits. The default is based upon aiming for .5 seconds 
-		// to validate the password when this class was added. Users should tune 
-		// password verification to their own systems.
-	}
+//	@Bean
+//	PasswordEncoder passwordEncoderArgon2() {
+//		return Argon2PasswordEncoder.defaultsForSpringSecurity_v5_8(); //new Pbkdf2PasswordEncoder();
+//		// Don's use constructor, it needs several parameters.
+//		// Instead use method defaultsForSpringSecurity_v5_8() that
+//		// constructs a PBKDF2 password encoder with no additional secret value. 
+//		// There will be a salt length of 16 bytes, 310,000 iterations, SHA-256 algorithm 
+//		// and a hash length of 256 bits. The default is based upon aiming for .5 seconds 
+//		// to validate the password when this class was added. Users should tune 
+//		// password verification to their own systems.
+//	}
 
 }
 

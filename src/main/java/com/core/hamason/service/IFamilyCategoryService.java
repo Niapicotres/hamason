@@ -14,6 +14,7 @@ public interface IFamilyCategoryService {
 	public Optional<FamilyCategory> findById(Long id);
 	
 	public List<FamilyCategory> findAll();
+	
 	void deleteById(Long id);
 
 }

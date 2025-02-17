@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Hamason</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#!">Hamason</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                 <li><a class="dropdown-item" th:href="@{/}">All Products</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li th:each="categoria : ${familyList}">
+                                <a class="dropdown-item" th:href="@{/products(categoria=${categoria.nombre})}" th:text="${categoria.nombre}"></a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                     <!-- <form class="d-flex">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="bi-cart-fill me-1"></i>
+                            Cart
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        </button>
+                    </form> -->
+        			<div class="text-center">
+        			 	
+    					<a class="btn btn-outline-dark mt-auto" th:href="@{standar/cart}">
+    					<i class="bi-cart-fill me-1"></i>
+    					 Cart
+    					<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+    					</a>
+    					
+					</div>
+					
+        	        <!--PARA INICIAR SESION-->
+        	        
+        	        <a class="btn btn-outline-secondary" th:href="@{/loginGet}">
+    				<i class="bi bi-person-circle me-1"></i>
+    						Sign In
+					</a>
+        	        
+                    
+                </div>
+            </div>
+        </nav>
+        <!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                </div>
+            </div>
+        </header>
+      <!--  <p th:text="${productList}"></p> -->
+      
+        <!-- Section-->
+  
+       <section class="vh-100" style="background-color: #9A616D;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form th:action="@{/loginPost}" method="post">
+				    <div class="d-flex align-items-center mb-3 pb-1">
+				        <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
+				        <span class="h1 fw-bold mb-0">Logo</span>
+				    </div>
+				
+				    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+				
+				    <div data-mdb-input-init class="form-outline mb-4">
+				        <label class="form-label" for="form2Example17">Email address</label>
+				        <input type="text" class="form-control form-control-lg" name="username" placeholder="Username"/>
+				    </div>
+				
+				    <div data-mdb-input-init class="form-outline mb-4">
+				        <label class="form-label" for="form2Example27">Password</label>
+				        <input type="password" class="form-control form-control-lg" name="password" placeholder="Password"/>
+				    </div>
+				
+				    <!-- Mensaje de error en la plantilla -->
+				    <p th:text="${errorMsg}" class="text-danger"></p>
+				
+				    <div class="pt-1 mb-4">
+				        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg btn-block" type="submit">
+				            Login
+				        </button>
+				    </div>
+				
+				    <a class="small text-muted" href="#!">Forgot password?</a>
+				    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!"
+				        style="color: #393f81;">Register here</a></p>
+				    <a href="#!" class="small text-muted">Terms of use.</a>
+				    <a href="#!" class="small text-muted">Privacy policy</a>
+				</form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+       
+       
+       
+       
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Hamason 2023</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

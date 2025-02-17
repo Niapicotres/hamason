@@ -60,64 +60,47 @@ public class StartControllerImpl
 		//
 		return "masterFull";
 	}
-
-	@Override
-	@GetMapping({"/logoutGet"})
-    public String logoutGet(
-    		Principal principal, 
-    		Model model, 
-    		HttpServletRequest request) {
-		System.out.println("TRAZA logoutGet");
-		// Invalidate session
-		request.getSession().invalidate();
-		//
-		// Inject data into html page
-		model.addAttribute("login", loginService.newEntity());
-		//
-		//return "redirect:/loginGet?logoutOk";
-		return "loginPage";
-	}
 	
 	@Override
-	@GetMapping({"/loginGet"})
-	public String loginGet(Model model) {
-		System.out.println("TRAZA loginGet");
-		// Inject data into html page
-		model.addAttribute("login", loginService.newEntity());
-		//
-		return "loginPage";
+	@GetMapping("/loginGetDD")
+	public String loginGet(Principal principal, Model model, HttpServletRequest request) {
+	    System.out.println("TRAZA loginGet");
+	    // Lógica para tu formulario de login
+	    model.addAttribute("login", new Login());
+	    return "standardLayouts/loginPage"; // la vista thymeleaf
 	}
 
-	@Override
-	@PostMapping({"/loginPost"})
-	public String loginPost(
-			@Valid Login login,
-			BindingResult bindingResult,
-			HttpServletRequest request,
-			Model model) {
-		System.out.println("TRAZA loginPost");
-		if (bindingResult.hasErrors()) {
-			log.warn("VALIDATION ERRORS!!!: " + bindingResult.getAllErrors());
-			return "loginPage";
-		}
-		else {
-			UsernamePasswordAuthenticationToken authenticationToken =
-					new UsernamePasswordAuthenticationToken(login.getUsername(), login.getPassword());
-			Authentication authentication = authenticationManager.authenticate(authenticationToken);
-			if (authentication.isAuthenticated()) {
-				SecurityContext securityContext = SecurityContextHolder.getContext();
-				securityContext.setAuthentication(authentication);
-				//
-				HttpSession session = request.getSession(true);
-				session.setAttribute(SPRING_SECURITY_CONTEXT_KEY, securityContext);
-			} 
-			else {
-				log.info("BAD CREDENTIALS! NOT LOGGED");
-				return "loginPage";
-			}			
-		}
-		return "redirect:/homeGet";
-	}
+	
+//	@Override
+//	@PostMapping({"/loginPost"})
+//	public String loginPost(
+//			@Valid Login login,
+//			BindingResult bindingResult,
+//			HttpServletRequest request,
+//			Model model) {
+//		System.out.println("TRAZA loginPost");
+//		if (bindingResult.hasErrors()) {
+//			log.warn("VALIDATION ERRORS!!!: " + bindingResult.getAllErrors());
+//			return "loginPage";
+//		}
+//		else {
+//			UsernamePasswordAuthenticationToken authenticationToken =
+//					new UsernamePasswordAuthenticationToken(login.getUsername(), login.getPassword());
+//			Authentication authentication = authenticationManager.authenticate(authenticationToken);
+//			if (authentication.isAuthenticated()) {
+//				SecurityContext securityContext = SecurityContextHolder.getContext();
+//				securityContext.setAuthentication(authentication);
+//				//
+//				HttpSession session = request.getSession(true);
+//				session.setAttribute(SPRING_SECURITY_CONTEXT_KEY, securityContext);
+//			} 
+//			else {
+//				log.info("BAD CREDENTIALS! NOT LOGGED");
+//				return "loginPage";
+//			}			
+//		}
+//		return "redirect:/homeGet";
+//	}
 
 	@Override
 	@GetMapping({"/homeGet"})

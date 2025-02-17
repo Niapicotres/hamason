@@ -9,9 +9,11 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.core.hamason.controller.IProductController;
 import com.core.hamason.data.model.Product;
+import com.core.hamason.service.IFamilyCategoryService;
 import com.core.hamason.service.IProductService;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -24,15 +26,37 @@ public class ProductControllerImpl implements IProductController {
 
     @Autowired
     private IProductService productService;
+    @Autowired
+    private IFamilyCategoryService familyCategoryService ;
     
+    //LIST ALL PRODUCTS
     @Override
     @GetMapping("/")
     public String productListGet(Principal principal, Model model, HttpServletRequest request) {
         log.info("Cargando la lista de productos");
+        // Carga todas las categorías para el menú
+        model.addAttribute("familyList", familyCategoryService.findAll());
+        // Carga todos los productos
         model.addAttribute("productList", productService.getAllProducts());
         return "index";
     }
-
+    
+    //LIST PRODUCTS BY CATEGORY
+    @Override
+    @GetMapping("/products")
+    public String  listProductsByCategory(@RequestParam("categoria") String categoria, Principal principal, Model model, HttpServletRequest request) {
+    	log.info("Cargando productos para la categoría: " + categoria);
+    	// Lista todas las categorías para el menú
+        model.addAttribute("familyList", familyCategoryService.findAll());
+        
+        // Muestra solo los productos de la categoría seleccionada
+        model.addAttribute("productList", productService.getProductsByFamily(categoria));
+        
+        return "index";
+    }
+     
+    
+    //FIND PRODUCT
     @Override
     @GetMapping("/product/viewGet/{id}")
     public String productViewGet(@PathVariable("id") Long id, Principal principal, Model model, HttpServletRequest request) {
@@ -41,6 +65,7 @@ public class ProductControllerImpl implements IProductController {
         return "product/productView";
     }
 
+    //UPDATE PRODUCT
     @Override
     @GetMapping("/product/updateGet/{id}")
     public String productUpdateGet(@PathVariable("id") Long id, Principal principal, Model model, HttpServletRequest request) {
@@ -49,6 +74,7 @@ public class ProductControllerImpl implements IProductController {
         return "product/productUpdate";
     }
 
+    //
     @Override
     @PostMapping("/product/updatePost")
     public String productUpdatePost(@Valid Product product, BindingResult bindingResult, Principal principal, Model model, HttpServletRequest request) {

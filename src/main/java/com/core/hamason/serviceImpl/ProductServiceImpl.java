@@ -15,6 +15,7 @@ import java.util.Optional;
 public class ProductServiceImpl implements IProductService {
 
     private final IProductRepository productRepository;
+    
     private final IFamilyCategoryRepository familyCategoryRepository;
 
     @Autowired
@@ -44,11 +45,13 @@ public class ProductServiceImpl implements IProductService {
         productRepository.deleteById(id);
     }
 
+ 
     @Override
-    public List<Product> getProductsByFamilia(String familia) {
-        FamilyCategory category = familyCategoryRepository.findByNombre(familia)
-            .orElseThrow(() -> new RuntimeException("Categoría no encontrada: " + familia));
-
+    public List<Product> getProductsByFamily(String family) {
+        FamilyCategory category = familyCategoryRepository.findByNombre(family)
+            .orElseThrow(() -> new RuntimeException("Categoría no encontrada: " + family));
+        
         return productRepository.findByFamilyCategory(category);
     }
+
 }

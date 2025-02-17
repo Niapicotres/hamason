@@ -9,12 +9,12 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.core.hamason.data.model.FamilyCategory;
 import com.core.hamason.data.model.Product;
 import com.core.hamason.data.model.Role;
 import com.core.hamason.data.model.User;
-
 import com.core.hamason.data.repository.IRoleRepository;
 import com.core.hamason.data.repository.IFamilyCategoryRepository;
 import com.core.hamason.data.repository.IProductRepository;
@@ -32,12 +32,62 @@ public class HamasonApplication {
 		IUserRepository userRepository,
 		IRoleRepository roleRepository,
 		IFamilyCategoryRepository familyCategoryRepository,
-		IProductRepository productRepository  
+		IProductRepository productRepository,  
+		PasswordEncoder passwordEncoder   
 			) 
 	{ return args -> {
 	
 	
-		
+		// Crear roles si no existen
+        if (roleRepository.findById("ADMIN").isEmpty()) {
+            roleRepository.save(new Role("ADMIN"));
+        }
+        if (roleRepository.findById("EMPLOYEE").isEmpty()) {
+            roleRepository.save(new Role("EMPLOYEE"));
+        }
+        if (roleRepository.findById("CUSTOMER").isEmpty()) {
+            roleRepository.save(new Role("CUSTOMER"));
+        }
+
+        // Crear usuario ADMIN si no existe
+        if (userRepository.findById("admin").isEmpty()) {
+            User admin = new User();
+            admin.setUsername("admin");
+            admin.setPassword(passwordEncoder.encode("adminPass")); // Contraseña cifrada
+            admin.setEmail("admin@example.com");
+            admin.setFullname("Admin Master");
+            admin.setEnabled(true);
+            admin.setLockedAccount(false);
+            // Fechas de caducidad, por ejemplo, un año en el futuro
+            admin.setExpiryDateAccount(LocalDate.now().plusYears(1));
+            admin.setExpiryDateCredentials(LocalDate.now().plusYears(1));
+
+            // Asignar rol ADMIN
+            Set<Role> roles = new HashSet<>();
+            roles.add(roleRepository.findById("ADMIN").get());
+            admin.setRoleSet(roles);
+
+            userRepository.save(admin);
+        }
+
+        // Crear usuario CUSTOMER si no existe
+        if (userRepository.findById("jane").isEmpty()) {
+            User customer = new User();
+            customer.setUsername("jane");
+            customer.setPassword(passwordEncoder.encode("janePass"));
+            customer.setEmail("jane@example.com");
+            customer.setFullname("Jane Customer");
+            customer.setEnabled(true);
+            customer.setLockedAccount(false);
+            customer.setExpiryDateAccount(LocalDate.now().plusYears(1));
+            customer.setExpiryDateCredentials(LocalDate.now().plusYears(1));
+
+            Set<Role> roles = new HashSet<>();
+            roles.add(roleRepository.findById("CUSTOMER").get());
+            customer.setRoleSet(roles);
+
+            userRepository.save(customer);
+        }
 		  
 		//BEFORE INSERT DATA PRODUCTS SAVE CATEGORY
 		    FamilyCategory food = familyCategoryRepository.save(new FamilyCategory(null, "FOOD", null));

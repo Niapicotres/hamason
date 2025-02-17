@@ -1,11 +1,12 @@
 package com.core.hamason.service;
 
-import org.springframework.stereotype.Service;
 import com.core.hamason.data.model.Login;
+import org.springframework.stereotype.Service;
 
 @Service
 public interface ILoginService {
 
-	public Login newEntity();
-
+    boolean validateCredentials(Login login);
+    
+    
 }

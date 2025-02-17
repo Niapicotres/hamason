@@ -21,7 +21,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
+                <a class="navbar-brand" href="#!">Hamason</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
@@ -30,13 +30,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">All Products</a></li>
+                                 <li><a class="dropdown-item" th:href="@{/}">All Products</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">FOOD</a></li>
-                                <li><a class="dropdown-item" href="#!">ELECTRONICS</a></li>
-                                 <li><a class="dropdown-item" href="#!">TEXTILE</a></li>
-                                <li><a class="dropdown-item" href="#!">JEWELRY</a></li>
-                                <li><a class="dropdown-item" href="#!">PERFUMERY</a></li>
+                                <li th:each="categoria : ${familyList}">
+                                <a class="dropdown-item" th:href="@{/products(categoria=${categoria.nombre})}" th:text="${categoria.nombre}"></a>
+                                </li>
                                 
                             </ul>
                         </li>
@@ -58,7 +56,14 @@
     					</a>
     					
 					</div>
-        
+					
+        	        <!--PARA INICIAR SESION-->
+        	        
+        	        <a class="btn btn-outline-secondary" th:href="@{/loginGet}">
+    				<i class="bi bi-person-circle me-1"></i>
+    						Sign In
+					</a>
+        	        
                     
                 </div>
             </div>
@@ -84,8 +89,9 @@
                     <div th:if="${producto.discount > 0}" class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
                         Sale
                     </div>
+                    
                     <!-- Product image -->
-                    <!--  <img class="card-img-top" th:src="@{/img/{familia}/{imagen}(familia=${producto.familyCategory.nombre}, imagen=${producto.urlFoto})}" alt="Imagen del producto" />  -->
+                    <img class="card-img-top" th:src="@{/img/products/{img}(img=${producto.imageUrl})}" alt="Imagen del producto" />  
                     
                     <!-- Product details -->
                     <div class="card-body p-4">
@@ -99,7 +105,10 @@
                     </div>
                     <!-- Product actions -->
                     <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                       <a class="btn btn-outline-dark mt-auto" th:href="@{/loginGet}">
+   							Add to cart
+						</a>
+
                     </div>
                 </div>
             </div>
@@ -113,7 +122,7 @@
        
         <!-- Footer-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Hamason 2023</p></div>
         </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

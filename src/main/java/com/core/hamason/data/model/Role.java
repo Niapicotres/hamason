@@ -31,4 +31,8 @@ public class Role implements Serializable {
 	@ManyToMany
 	private Set<User> userSet;
 	
+	public Role(String rolename) {
+        this.rolename = rolename;
+    }
+	
 }
