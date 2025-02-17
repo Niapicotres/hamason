@@ -5,9 +5,8 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ICustomerService {
-	Optional<Customer> getCustomerById(Long id); 
-    Customer getCustomerByEmail(String email);
-    List<Customer> getAllCustomers();
-    Customer saveCustomer(Customer customer);
-    void deleteCustomer(Long id);
+    List<Customer> findAllCustomers();
+    Optional<Customer> findByUsername(String username);
+    void updateCustomer(Customer customer);
+    void deleteCustomer(String username);
 }

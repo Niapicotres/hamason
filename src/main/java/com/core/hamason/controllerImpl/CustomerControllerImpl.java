@@ -3,18 +3,27 @@ package com.core.hamason.controllerImpl;
 import com.core.hamason.data.model.Customer;
 import com.core.hamason.service.ICustomerService;
 import com.core.hamason.controller.ICustomerController;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import java.util.List;
 import java.util.Optional;
 
 @Controller
 public class CustomerControllerImpl implements ICustomerController {
-    private final ICustomerService customerService;
+	
 
+    
+    @Autowired
+    private ICustomerService customerService ;
+
+    
+    
     public CustomerControllerImpl(ICustomerService customerService) {
         this.customerService = customerService;
     }
-
+    
+  
     @Override
     public Customer getCustomerById(Long id) {
         Optional<Customer> customerOpt = customerService.getCustomerById(id);

@@ -4,6 +4,8 @@ import com.core.hamason.data.model.User;
 import com.core.hamason.data.repository.IUserRepository;
 import com.core.hamason.service.IUserService;
 
+import jakarta.transaction.Transactional;
+
 import org.hibernate.Hibernate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -48,7 +50,7 @@ public class UserServiceImpl implements IUserService {
         }
         return userRepository.save(user);
     }
-
+    @Transactional 
     @Override
     public void deleteUser(String username) {
         userRepository.deleteByUsername(username);

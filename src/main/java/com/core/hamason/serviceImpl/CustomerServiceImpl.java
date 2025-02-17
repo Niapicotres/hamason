@@ -3,42 +3,42 @@ package com.core.hamason.serviceImpl;
 import com.core.hamason.data.model.Customer;
 import com.core.hamason.data.repository.ICustomerRepository;
 import com.core.hamason.service.ICustomerService;
+
+import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class CustomerServiceImpl implements ICustomerService {
-    private final ICustomerRepository customerRepository;
 
-    public CustomerServiceImpl(ICustomerRepository customerRepository) {
-        this.customerRepository = customerRepository;
-    }
+    @Autowired
+    private ICustomerRepository customerRepository;
 
     @Override
-    public Optional<Customer> getCustomerById(Long id) {
-        return customerRepository.findById(id);
-    }
-
-    @Override
-    public Customer getCustomerByEmail(String email) {
-        return customerRepository.findByEmail(email)
-                                 .orElseThrow(() -> new RuntimeException("Customer not found with email: " + email));
-    }
-
-
-    @Override
-    public List<Customer> getAllCustomers() {
+    public List<Customer> findAllCustomers() {
         return customerRepository.findAll();
     }
 
     @Override
-    public Customer saveCustomer(Customer customer) {
-        return customerRepository.save(customer);
+    public Optional<Customer> findByUsername(String username) {
+        return customerRepository.findByUsername(username);
     }
 
+    @Transactional
     @Override
-    public void deleteCustomer(Long id) {
-        customerRepository.deleteById(id);
+    public void updateCustomer(Customer customer) {
+        customerRepository.save(customer);
+    }
+
+    @Transactional
+    @Override
+    public void deleteCustomer(String username) {
+        Customer customer = customerRepository.findByUsername(username).orElse(null);
+        if (customer != null) {
+            customerRepository.delete(customer);
+        }
     }
 }
