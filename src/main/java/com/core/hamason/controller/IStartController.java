@@ -14,7 +14,7 @@ import jakarta.validation.Valid;
 @Controller
 public interface IStartController {
 	
-	public String loginGet(Principal principal, Model model, HttpServletRequest request);
+//	public String loginGet(Principal principal, Model model, HttpServletRequest request);
 
 	public String dumpDBGet();
 

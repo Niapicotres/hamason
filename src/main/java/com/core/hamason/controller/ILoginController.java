@@ -15,5 +15,9 @@ import jakarta.validation.Valid;
 public interface ILoginController {
     // Carga el formulario de login
     String loginGet(Principal principal, Model model, HttpServletRequest request);
+    String loginPost(@Valid Login login,
+			BindingResult bindingResult,
+			HttpServletRequest request,
+			Model model);
 
 }

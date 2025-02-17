@@ -61,14 +61,14 @@ public class StartControllerImpl
 		return "masterFull";
 	}
 	
-	@Override
-	@GetMapping("/loginGetDD")
-	public String loginGet(Principal principal, Model model, HttpServletRequest request) {
-	    System.out.println("TRAZA loginGet");
-	    // Lógica para tu formulario de login
-	    model.addAttribute("login", new Login());
-	    return "standardLayouts/loginPage"; // la vista thymeleaf
-	}
+//	@Override
+//	@GetMapping("/loginGetDD")
+//	public String loginGet(Principal principal, Model model, HttpServletRequest request) {
+//	    System.out.println("TRAZA loginGet");
+//	    // Lógica para tu formulario de login
+//	    model.addAttribute("login", new Login());
+//	    return "standardLayouts/loginPage"; // la vista thymeleaf
+//	}
 
 	
 //	@Override

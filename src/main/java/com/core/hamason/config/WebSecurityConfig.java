@@ -61,49 +61,30 @@ public class WebSecurityConfig {
                 //.formLogin(Customizer.withDefaults());	
                 .formLogin(formLogin -> {
                     formLogin
-                      .loginPage("/loginGet") // Login page will be accessed through this endpoint. We will create a controller method for this.
-                      .loginProcessingUrl("/loginPost") // This endpoint will be mapped internally. This URL will be our Login form post action.
-                      //.usernameParameter("username")
-                      //.passwordParameter("password")
-                      .permitAll() // We re permitting all for login page
-                      .defaultSuccessUrl("/welcome") // If the login is successful, user will be redirected to this URL.
-                      .failureUrl("/login?badCredentials"); // If the user fails to login, application will redirect the user to this endpoint
-                   	})
+                        .loginPage("/loginGet") // Login page will be accessed through this endpoint. We will create a controller method for this.
+                        .loginProcessingUrl("/loginPost") // This endpoint will be mapped internally. This URL will be our Login form post action.
+                        //.usernameParameter("username")
+                        //.passwordParameter("password")
+                        .permitAll() // We re permitting all for login page
+                        
+                     
+                        .failureUrl("/standardLayouts/loginPage?badCredentials"); // If the user fails to login, application will redirect the user to this endpoint
+                })
                 .logout(formLogout -> {
                     formLogout
-                    .logoutUrl("/logoutGet")
-                    .permitAll() // We re permitting all for logout page
-                    .logoutSuccessUrl("/loginGet?logoutOk"); // If the logout is successful, user will be redirected to this URL.
-                	})
-                ;
-        
-        log.info("*********** httpSecurity.getSharedObjects()= " + httpSecurity.getSharedObjects());
+                        .logoutUrl("/logoutGet")
+                        .permitAll() // We re permitting all for logout page
+                        .logoutSuccessUrl("/loginGet?logoutOk"); // If the logout is successful, user will be redirected to this URL.
+                });
 
-		return httpSecurity.build();
+                log.info("*********** httpSecurity.getSharedObjects()= " + httpSecurity.getSharedObjects());
+
+                return httpSecurity.build();
+
 	}
 	
 	
-	@Bean
-	AuthenticationSuccessHandler customAuthenticationSuccessHandler() {
-	    return (request, response, authentication) -> {
-	        authentication.getAuthorities().forEach(authority -> {
-	            if (authority.getAuthority().equals("ROLE_ADMIN")) {
-	                try {
-	                    response.sendRedirect("/admin/adminIndex");
-	                } catch (Exception e) {
-	                    e.printStackTrace();
-	                }
-	            } else {
-	                try {
-	                    response.sendRedirect("/welcome");
-	                } catch (Exception e) {
-	                    e.printStackTrace();
-	                }
-	            }
-	        });
-	    };
-	}
-	
+
 	
 	
 

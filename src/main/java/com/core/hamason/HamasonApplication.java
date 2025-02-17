@@ -88,6 +88,26 @@ public class HamasonApplication {
 
             userRepository.save(customer);
         }
+        
+        if (userRepository.findById("employee").isEmpty()) {
+            User admin = new User();
+            admin.setUsername("employee");
+            admin.setPassword(passwordEncoder.encode("employeePass")); // Contraseña cifrada
+            admin.setEmail("employee@example.com");
+            admin.setFullname("Employee Master");
+            admin.setEnabled(true);
+            admin.setLockedAccount(false);
+            // Fechas de caducidad, por ejemplo, un año en el futuro
+            admin.setExpiryDateAccount(LocalDate.now().plusYears(1));
+            admin.setExpiryDateCredentials(LocalDate.now().plusYears(1));
+
+            // Asignar rol ADMIN
+            Set<Role> roles = new HashSet<>();
+            roles.add(roleRepository.findById("EMPLOYEE").get());
+            admin.setRoleSet(roles);
+
+            userRepository.save(admin);
+        }
 		  
 		//BEFORE INSERT DATA PRODUCTS SAVE CATEGORY
 		    FamilyCategory food = familyCategoryRepository.save(new FamilyCategory(null, "FOOD", null));
